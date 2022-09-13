@@ -43,13 +43,13 @@ The boxes allow to combine products together and sell them as a pack.
 
 These are the users stories defined for the first phase of the project.
 
-* USER STORY: Welcome Page #1 - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account.
-* USER STORY: Create account #2 - As a Site User I want to be able to create an account so that I can log in to the website.
-* USER STORY: Log in #3 - As a Registered Site User I want to be able to log in to the website so that I can buy products.
-* USER STORY: Recover password #4 - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
-* USER STORY: View list of products #5 - As a Registered Site User I want to be able to view a list of products so that I can select some to purchase.
-* USER STORY: View individual product details #6 - As a Registered Site User I want to be able to view the name, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
-* USER STORY: Sort the list of available products #7 - As a Registered Site User I want to be able to sort products by name and price so that I can easily identify what I want to purchase.
+* USER STORY #1: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account.
+* USER STORY #2: Create account - As a Site User I want to be able to create an account so that I can log in to the website.
+* USER STORY #3: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
+* USER STORY #4: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
+* USER STORY #5: View list of products - As a Registered Site User I want to be able to view a list of products so that I can select some to purchase.
+* USER STORY #6: View individual product details - As a Registered Site User I want to be able to view the name, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
+* USER STORY #7: Sort the list of available products - As a Registered Site User I want to be able to sort products by name and price so that I can easily identify what I want to purchase.
 
 ### Wireframes
 
@@ -71,8 +71,7 @@ This section presents the status of the development of the <em>MyGreenGrocer</em
 
 ### User stories defined for project's phase 1
 
-Tue Jun 28 21:38 2022 +0100
-![image](https://user-images.githubusercontent.com/87392921/176278595-431d0598-2a82-46a8-b2dc-79a5883587e4.png)
+![image](https://user-images.githubusercontent.com/87392921/190022403-80fa7233-6862-41c9-bdbe-d9dc27aca254.png)
 
 ## Testing
 
