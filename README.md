@@ -47,7 +47,7 @@ These are the users stories defined for the first phase of the project.
 * USER STORY #2: Create account - As a Site User I want to be able to create an account so that I can log in to the website.
 * USER STORY #3: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
 * USER STORY #4: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
-* USER STORY #5: View list of products - As a Registered Site User I want to be able to view a list of products so that I can select some to purchase.
+* USER STORY #5: View list of products - As a Registered Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.
 * USER STORY #6: View individual product details - As a Registered Site User I want to be able to view the name, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
 * USER STORY #7: Sort the list of available products - As a Registered Site User I want to be able to sort products by name and price so that I can easily identify what I want to purchase.
 
