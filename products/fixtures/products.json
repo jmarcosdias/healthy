@@ -1,0 +1,107 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"apple_orange_peppers_limes_1",
+          "title":"Healthy Box 1",
+          "description":"1 apple, 1 orange, 1 red pepper, 1 yellow pepper and 2 limes",
+          "price":2.35,
+          "category":3,
+          "image_url":"tbd",
+          "image":"apple-orange-peppers-limes-1.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "sku":"avocado_1",
+          "title":"Avocado",
+          "subtitle": "1 avocado",
+          "price": 1.5,
+          "category":1,
+          "image_url":"tbd",
+          "image":"avocado-1.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "sku":"broccoli_1",
+          "title":"Broccoli",
+          "subtitle": "500 g",
+          "price":1.75,
+          "category":2,
+          "image_url":"tbd",
+          "image":"broccoli-1.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "sku":"eggplant_1",
+          "title":"Eggplant",
+          "subtitle":"3 eggplants",
+          "price":1.8,
+          "category":2,
+          "image_url":"tbd",
+          "image":"eggplant-1.jpg"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.product",
+       "fields":{
+          "sku":"garlic_lemon_1.jpg",
+          "title":"Garlic Lemon Box",
+          "description":"2 garlic bulbs and 5 lemons",
+          "price":2.20,
+          "category":3,
+          "image_url":"tbd",
+          "image":"garlic-lemon-1.jpg"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.product",
+       "fields":{
+          "sku":"kiwi_1",
+          "title":"Kiwi",
+          "subtitle":"6 kiwis",
+          "price":1,
+          "category":1,
+          "image_url":"tbd",
+          "image":"kiwi-1.png"
+       }
+    },
+    {
+       "pk":7,
+       "model":"products.product",
+       "fields":{
+          "sku":"lemon_1",
+          "title":"Lemon",
+          "subtitle":"1 lemon",
+          "price": 0.50,
+          "category":1,
+          "image_url":"tbd",
+          "image":"lemon-1.jpg"
+       }
+    },
+    {
+       "pk":8,
+       "model":"products.product",
+       "fields":{
+          "sku":"tomato_1",
+          "title":"Tomato",
+          "subtitle":"250 g",
+          "price":0.48,
+          "category":2,
+          "image_url":"tbd",
+          "image":"tomato-1.jpg"
+       }
+    }
+ ]
+ 
