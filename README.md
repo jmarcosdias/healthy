@@ -23,11 +23,9 @@
 
 ## Purpose
 
-The purpose of this application is to support the business of a greengrocer that sells fruits and vegetables.
+The purpose of this application is to support the business of a greengrocer.
 
-The online app will start with the following three categories of products: fresh fruits, fresh vegetables and boxes.
-
-The boxes allow to combine products together and sell them as a pack.
+The online app will start with the following three categories of products: fresh fruits, fresh vegetables and boxes. The boxes allow to combine different products together and sell them as a pack.
 
 ## Features 
 
