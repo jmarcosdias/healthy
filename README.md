@@ -48,8 +48,8 @@ These are the users stories defined for the first phase of the project.
 * USER STORY #3: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
 * USER STORY #4: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
 * USER STORY #5: View list of products - As a Registered Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.
-* USER STORY #6: View individual product details - As a Registered Site User I want to be able to view the name, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
-* USER STORY #7: Sort the list of available products - As a Registered Site User I want to be able to sort products by name and price so that I can easily identify what I want to purchase.
+* USER STORY #6: View individual product details - As a Registered Site User I want to be able to view the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
+* USER STORY #7: Sort the list of available products - As a Registered Site User I want to be able to sort products by title and price so that I can easily identify what I want to purchase.
 
 ### Wireframes
 
@@ -100,6 +100,11 @@ The create account, log in and recover password functionalities are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190216205-c958c91b-63bc-4f9c-8064-e567f19a911f.png)
 
+# Start working on view individual product details
+
+![image](https://user-images.githubusercontent.com/87392921/190267108-6322e38f-b43a-4450-bfcc-056ab9f6dae4.png)
+
+The list or products and sort by product title and price are complete.
 
 ## Testing
 
