@@ -104,7 +104,9 @@ The create account, log in and recover password functionalities are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190267108-6322e38f-b43a-4450-bfcc-056ab9f6dae4.png)
 
-The list or products and sort by product title and price are complete.
+The list of products and sort by product title and price are complete.
+
+![image](https://user-images.githubusercontent.com/87392921/190268120-909c2d16-a2ae-40c3-b113-db98474e2be0.png)
 
 ## Testing
 
