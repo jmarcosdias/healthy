@@ -78,6 +78,17 @@ This section presents the status of the development of the <em>MyGreenGrocer</em
 The objective here is to create the my_greengrocer project and the home app.
 ![image](https://user-images.githubusercontent.com/87392921/190152639-052d82f9-3a44-4e34-90a0-c0a2bedc1460.png)
 
+### Start working on create account functionality
+
+![image](https://user-images.githubusercontent.com/87392921/190172435-7f3fecea-36ee-47e1-b960-ddd5ee720bb9.png)
+
+The welcome page is complete:
+
+![image](https://user-images.githubusercontent.com/87392921/190173005-596b8b17-1992-4028-996c-5170f36694b0.png)
+
+![image](https://user-images.githubusercontent.com/87392921/190173419-c340b51e-b630-46fc-8e99-2e8475245416.png)
+
+
 ## Testing
 
 ### Manual tests
