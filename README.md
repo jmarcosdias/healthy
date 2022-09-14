@@ -106,6 +106,9 @@ The list of products and sort by product title and price are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190268120-909c2d16-a2ae-40c3-b113-db98474e2be0.png)
 
+![image](https://user-images.githubusercontent.com/87392921/190270032-65edc734-d63c-42d1-b957-f9b255adf020.png)
+
+
 ## Testing
 
 ### Manual tests
