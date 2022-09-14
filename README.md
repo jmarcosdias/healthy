@@ -73,6 +73,11 @@ This section presents the status of the development of the <em>MyGreenGrocer</em
 
 ![image](https://user-images.githubusercontent.com/87392921/190022403-80fa7233-6862-41c9-bdbe-d9dc27aca254.png)
 
+### Start working on welcome page
+
+The objective here is to create the my_greengrocer project and the home app.
+![image](https://user-images.githubusercontent.com/87392921/190152639-052d82f9-3a44-4e34-90a0-c0a2bedc1460.png)
+
 ## Testing
 
 ### Manual tests
