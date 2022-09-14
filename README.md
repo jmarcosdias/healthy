@@ -82,11 +82,23 @@ The objective here is to create the my_greengrocer project and the home app.
 
 ![image](https://user-images.githubusercontent.com/87392921/190172435-7f3fecea-36ee-47e1-b960-ddd5ee720bb9.png)
 
-The welcome page is complete:
+The welcome page is complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190173005-596b8b17-1992-4028-996c-5170f36694b0.png)
 
 ![image](https://user-images.githubusercontent.com/87392921/190173419-c340b51e-b630-46fc-8e99-2e8475245416.png)
+
+### Start working on list of products 
+
+![image](https://user-images.githubusercontent.com/87392921/190215149-96744106-ac66-428e-a10c-5403e85182e8.png)
+
+The create account, log in and recover password functionalities are complete.
+
+![image](https://user-images.githubusercontent.com/87392921/190215671-25b9b224-edb8-463e-966b-bb5655033976.png)
+
+![image](https://user-images.githubusercontent.com/87392921/190216037-1565721d-21a5-4877-8ff1-d86fe866380e.png)
+
+![image](https://user-images.githubusercontent.com/87392921/190216205-c958c91b-63bc-4f9c-8064-e567f19a911f.png)
 
 
 ## Testing
