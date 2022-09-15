@@ -38,7 +38,7 @@ The users are able to list products by category or all products from all categor
 
 Browsing a list of products, the users can select a product and add it to the shopping bag, specifying the quantity.
 
-The contents of the shopping bag are stored in the HTTP session that is established between the HTTP client (browser) and the HTTP server. By storing these contents in the HTTP session and making sure there is always a link to the checkout functionality, the web app allows the user to consolidate their purchase at any point of their experience while using the online store.
+The contents of the shopping bag are stored in the HTTP session that is established between the HTTP client (browser) and the HTTP server. By storing these contents in the HTTP session and making sure there is always a link to the checkout functionality, the web application allows the user to consolidate their purchase at any point after adding one or more products to the bag.
 
 ### Features Left to Implement
 
