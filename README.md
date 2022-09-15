@@ -107,7 +107,7 @@ The create account, log in and recover password functionalities are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190216205-c958c91b-63bc-4f9c-8064-e567f19a911f.png)
 
-# Start working on view individual product details
+### Start working on view individual product details
 
 ![image](https://user-images.githubusercontent.com/87392921/190267108-6322e38f-b43a-4450-bfcc-056ab9f6dae4.png)
 
@@ -117,6 +117,13 @@ The list of products and sort by product title and price are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190270032-65edc734-d63c-42d1-b957-f9b255adf020.png)
 
+### Phase 1 is complete
+
+![image](https://user-images.githubusercontent.com/87392921/190402726-eb4a9f79-fb2d-4324-ab10-9e4bed0b281b.png)
+
+### User stories defined for project's phase 2
+
+### User stories defined for project's phase 3
 
 ## Testing
 
