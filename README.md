@@ -50,13 +50,26 @@ The contents of the shopping bag are stored in the HTTP session that is establis
 
 These are the users stories defined for the first phase of the project.
 
-* USER STORY #1: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account.
-* USER STORY #2: Create account - As a Site User I want to be able to create an account so that I can log in to the website.
-* USER STORY #3: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
-* USER STORY #4: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
-* USER STORY #5: View list of products - As a Registered Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.
-* USER STORY #6: View individual product details - As a Registered Site User I want to be able to view the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
-* USER STORY #7: Sort the list of available products - As a Registered Site User I want to be able to sort products by title and price so that I can easily identify what I want to purchase.
+* USER STORY: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account.
+* USER STORY: Create account - As a Site User I want to be able to create an account so that I can log in to the website.
+* USER STORY: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
+* USER STORY: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
+* USER STORY: View list of products - As a Registered Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.
+* USER STORY: View individual product details - As a Registered Site User I want to be able to view the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
+* USER STORY: Sort the list of available products - As a Registered Site User I want to be able to sort products by title and price so that I can easily identify what I want to purchase.
+
+#### Phase 2
+
+Here are the user stories that make up the second phase of the project.
+
+* USER STORY: Products management
+* USER STORY: Shopping bag
+* USER STORY: Checkout
+* USER STORY: Feedback messages to user
+* USER STORY: Products reviews
+* USER STORY: Products requests
+* USER STORY: Contacts requests
+* USER STORY: Newsletter signup form
 
 ### Wireframes
 
@@ -123,7 +136,7 @@ The list of products and sort by product title and price are complete.
 
 ### User stories defined for project's phase 2
 
-### User stories defined for project's phase 3
+![image](https://user-images.githubusercontent.com/87392921/190424118-887e3559-2e4d-44e8-9de3-1b85bea8c9e1.png)
 
 ## Testing
 
