@@ -25,11 +25,20 @@
 
 The purpose of this application is to support the business of a greengrocer.
 
-The online app will start with the following three categories of products: fresh fruits, fresh vegetables and boxes. The boxes allow to combine different products together and sell them as a pack.
+The online store will start with three categories of products: fresh fruits, fresh vegetables and boxes.
 
-## Features 
+The boxes are packed products that can contain anything. There is a product description field that can be used by the seller to describe the contents of each box.
+
+
+## Features
 
 ### Existing Features
+
+The users are able to list products by category or all products from all categories and then they can sort each list alphabetically or by price.
+
+Browsing a list of products, the users can select a product and add it to the shopping bag, specifying the quantity.
+
+The contents of the shopping bag are stored in the HTTP session that is established between the HTTP client (browser) and the HTTP server. By storing these contents in the HTTP session and making sure there is always a link to the checkout functionality, the web app allows the user to consolidate their purchase at any point of their experience while using the online store.
 
 ### Features Left to Implement
 
