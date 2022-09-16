@@ -146,6 +146,12 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.update-link-button {
+    background: none;
+    border: none;
+    cursor: pointer; 
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
