@@ -3,7 +3,7 @@
        "pk":1,
        "model":"products.product",
        "fields":{
-          "sku":"apple_orange_peppers_limes_1",
+          "sku":"202209160001",
           "title":"Healthy Box 1",
           "description":"1 apple, 1 orange, 1 red pepper, 1 yellow pepper and 2 limes",
           "price":2.35,
@@ -16,7 +16,7 @@
        "pk":2,
        "model":"products.product",
        "fields":{
-          "sku":"avocado_1",
+          "sku":"202209160002",
           "title":"Avocado",
           "subtitle": "1 avocado",
           "price": 1.5,
@@ -29,7 +29,7 @@
        "pk":3,
        "model":"products.product",
        "fields":{
-          "sku":"broccoli_1",
+          "sku":"202209160003",
           "title":"Broccoli",
           "subtitle": "500 g",
           "price":1.75,
@@ -42,7 +42,7 @@
        "pk":4,
        "model":"products.product",
        "fields":{
-          "sku":"eggplant_1",
+          "sku":"202209160004",
           "title":"Eggplant",
           "subtitle":"3 eggplants",
           "price":1.8,
@@ -55,7 +55,7 @@
        "pk":5,
        "model":"products.product",
        "fields":{
-          "sku":"garlic_lemon_1.jpg",
+          "sku":"202209160005",
           "title":"Garlic Lemon Box",
           "description":"2 garlic bulbs and 5 lemons",
           "price":2.20,
@@ -68,7 +68,7 @@
        "pk":6,
        "model":"products.product",
        "fields":{
-          "sku":"kiwi_1",
+          "sku":"202209160006",
           "title":"Kiwi",
           "subtitle":"6 kiwis",
           "price":1,
@@ -81,7 +81,7 @@
        "pk":7,
        "model":"products.product",
        "fields":{
-          "sku":"lemon_1",
+          "sku":"202209160007",
           "title":"Lemon",
           "subtitle":"1 lemon",
           "price": 0.50,
@@ -94,7 +94,7 @@
        "pk":8,
        "model":"products.product",
        "fields":{
-          "sku":"tomato_1",
+          "sku":"202209160008",
           "title":"Tomato",
           "subtitle":"250 g",
           "price":0.48,
