@@ -146,6 +146,12 @@ The product management functionality is complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190531938-cc4c2326-ea8b-4a13-b564-474214e1f90d.png)
 
+### Start working on feedback messages to the user
+
+When working on shopping bag, I decided to implement the system that shows feedback messages to the user. So I am working on both items now.
+
+![image](https://user-images.githubusercontent.com/87392921/190652564-d5ce773f-0f29-46f2-be0c-b962ac6dd6d4.png)
+
 ## Testing
 
 ### Manual tests
