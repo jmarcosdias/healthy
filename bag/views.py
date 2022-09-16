@@ -18,12 +18,10 @@ def add_to_bag(request, item_id):
     bag = request.session.get('bag', {})
 
     product_name = None
-
     if product.subtitle:
-        product_name = '{product.title} - {product.subtitle}'
+        product_name = f'"{product.title} - {product.subtitle}"'
     else:
         product_name = product.title
-
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
@@ -36,3 +34,49 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
     
 
+def adjust_bag(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
+
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
+
+    product_name = None
+    if product.subtitle:
+        product_name = f'"{product.title} - {product.subtitle}"'
+    else:
+        product_name = product.title
+
+
+    if quantity > 0:
+        bag[item_id] = quantity
+        messages.success(request, f'Updated {product_name} quantity to {bag[item_id]}')
+    else:
+        bag.pop(item_id)
+        messages.success(request, f'Removed {product_name} from your bag')
+
+    request.session['bag'] = bag
+    return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+
+    try:
+        product = get_object_or_404(Product, pk=item_id)
+        bag = request.session.get('bag', {})
+        bag.pop(item_id)
+
+        product_name = None
+        if product.subtitle:
+            product_name = f'"{product.title} - {product.subtitle}"'
+        else:
+            product_name = product.title
+        messages.success(request, f'Removed {product_name} from your bag')
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
+        return HttpResponse(status=500)

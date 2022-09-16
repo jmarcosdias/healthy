@@ -1,3 +1,2 @@
-<p class="my-0"><strong>Title: {{ item.product.title }}</strong></p>
-<p class="my-0"><strong>Subtitle: </strong>{% if item.product.subtitle %}{{ item.subtitle|upper }}{% else %}N/A{% endif %}</p>
+<p class="my-0"><strong>{{ item.product.title }}{% if item.product.subtitle %} - {{ item.product.subtitle }}{% endif %}</strong></p>
 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
