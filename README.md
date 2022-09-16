@@ -152,6 +152,12 @@ When working on shopping bag, I decided to implement the system that shows feedb
 
 ![image](https://user-images.githubusercontent.com/87392921/190652564-d5ce773f-0f29-46f2-be0c-b962ac6dd6d4.png)
 
+### Start working on checkout functionality
+
+![image](https://user-images.githubusercontent.com/87392921/190721023-bb43ae7b-3f54-44a0-a8ba-8757156b4d75.png)
+
+The feedback messages to the user and the shopping bag are complete. The following features to be implemented, must use feedback messages to the user.
+
 ## Testing
 
 ### Manual tests
