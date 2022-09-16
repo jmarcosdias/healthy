@@ -138,6 +138,14 @@ The list of products and sort by product title and price are complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/190424118-887e3559-2e4d-44e8-9de3-1b85bea8c9e1.png)
 
+### Start working on shopping bag
+
+![image](https://user-images.githubusercontent.com/87392921/190521727-50f9028d-746d-4731-a7b6-18d760de4866.png)
+
+The product management functionality is complete.
+
+![image](https://user-images.githubusercontent.com/87392921/190531938-cc4c2326-ea8b-4a13-b564-474214e1f90d.png)
+
 ## Testing
 
 ### Manual tests
