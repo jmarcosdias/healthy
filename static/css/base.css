@@ -20,6 +20,27 @@ body {
     text-shadow: 0.2rem -0.2rem #28a745;
 }
 
+.product-image-container {
+    min-height: 250px;
+    position: relative;
+    text-align: center;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color:#f8f9fa;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#f8f9fa;
+  }
+
 .medium-cream {
     font-weight:500;
     color:#f8f9fa;
