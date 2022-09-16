@@ -2,11 +2,21 @@
 
     // Disable +/- buttons outside 1-99 range
     function handleEnableDisable(itemId) {
-        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
-        var minusDisabled = currentValue < 2;
-        var plusDisabled = currentValue > 98;
-        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+        var currentValue1 = parseInt($(`#id-qty-qf1-${itemId}`).val());
+        if (currentValue1 > 0) {
+            var minusDisabled1 = currentValue1 < 2;
+            var plusDisabled1= currentValue1 > 98;
+            $(`#decrement-qty-qf1-${itemId}`).prop('disabled', minusDisabled1);
+            $(`#increment-qty-qf1-${itemId}`).prop('disabled', plusDisabled1);
+        }
+
+        var currentValue2 = parseInt($(`#id-qty-qf2-${itemId}`).val());
+        if (currentValue2 > 0) {
+            var minusDisabled2 = currentValue2 < 2;
+            var plusDisabled2= currentValue2 > 98;
+            $(`#decrement-qty-qf2-${itemId}`).prop('disabled', minusDisabled2);
+            $(`#increment-qty-qf2-${itemId}`).prop('disabled', plusDisabled2);
+        }
     }
 
     // Ensure proper enabling/disabling of all inputs on page load
