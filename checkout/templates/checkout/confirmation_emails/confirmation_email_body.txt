@@ -1,0 +1,7 @@
+Dear {{ order.full_name }},
+
+Your order is confirmed. We are delivering your groceries in three days.
+
+Thanks for your purchase!
+
+Your Greengrocer
