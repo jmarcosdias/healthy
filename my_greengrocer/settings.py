@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
+    'profiles',
 
     # Other
     'crispy_forms',
@@ -174,3 +176,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Stripe
 FREE_DELIVERY_THRESHOLD = 30
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51LOAfwFbhVTtCp6xqCNbjhYzsv3GlTnsw1OOcHf0Sx3nRKABsSxkVvl9v7NuxVxv7ak6k7OsRnqyo367CBCqyzqI00MtkDBoAf')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51LOAfwFbhVTtCp6xwOjeMk0XKqpUYHHOFRASZ8RRbKXHJ1hxYx0SJ5vI2x9vJuYIB2fHo7ySgDaCT3GwPGLFuwNZ00WcpMJyRl')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'hohoho')
