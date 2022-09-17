@@ -165,6 +165,13 @@ During the work on the checkout app, it was identified the need of the profile a
 
 ![image](https://user-images.githubusercontent.com/87392921/190869688-6416f083-5669-40b3-a2c6-bf7fb2c2cc6a.png)
 
+### Start working on product reviews
+
+![image](https://user-images.githubusercontent.com/87392921/190874727-894afdea-2b87-476a-933d-363bc6fc76b0.png)
+
+The following options will be implemented under "My Account" menu, as this seems to be the place where these options should live.
+
+![image](https://user-images.githubusercontent.com/87392921/190874788-93751f6b-b1cd-42cc-9585-cfb3624ebc9d.png)
 
 ## Testing
 
