@@ -65,6 +65,7 @@ Here are the user stories that make up the second phase of the project.
 * USER STORY: Products management
 * USER STORY: Shopping bag
 * USER STORY: Checkout
+* USER STORY: Profile
 * USER STORY: Feedback messages to user
 * USER STORY: Products reviews
 * USER STORY: Products requests
@@ -157,6 +158,13 @@ When working on shopping bag, I decided to implement the system that shows feedb
 ![image](https://user-images.githubusercontent.com/87392921/190721023-bb43ae7b-3f54-44a0-a8ba-8757156b4d75.png)
 
 The feedback messages to the user and the shopping bag are complete. The following features to be implemented, must use feedback messages to the user.
+
+### Add a user story to work on profile app
+
+During the work on the checkout app, it was identified the need of the profile app, so the kanban board was updated accordingly.
+
+![image](https://user-images.githubusercontent.com/87392921/190869688-6416f083-5669-40b3-a2c6-bf7fb2c2cc6a.png)
+
 
 ## Testing
 
