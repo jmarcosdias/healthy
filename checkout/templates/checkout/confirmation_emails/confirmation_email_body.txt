@@ -1,6 +1,6 @@
 Dear {{ order.full_name }},
 
-Your order is confirmed. We are delivering your groceries in three days.
+Your order is confirmed. We are delivering your groceries in up to three days.
 
 Thanks for your purchase!
 
