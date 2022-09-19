@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4">Product Requests Management</h2>
+                <h5 class="text-muted">Edit a Product Request</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="lead col-12 col-md-6 mb-3">Product request #{{ product_request.id }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 mb-1">Update here your product request*</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'edit_product_request' product_request.id %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <div class="text-right">
+                        <a class="btn btn-outline-success rounded-0" href="{% url 'product_requests' %}">Cancel</a>
+                        <button class="btn btn-success rounded-0" type="submit">Update Product Request</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
