@@ -177,6 +177,14 @@ The following options will be implemented under "My Account" menu, as this seems
 
 ![image](https://user-images.githubusercontent.com/87392921/190934977-a51cc481-8608-4f81-a096-fe891be9b558.png)
 
+### Start working on contact requests 
+
+![image](https://user-images.githubusercontent.com/87392921/191104835-3c204364-6db0-44dd-8cfd-5edbe6e4be3f.png)
+
+The product requests functionality is complete.
+
+![image](https://user-images.githubusercontent.com/87392921/191106097-f2fd1885-c472-4134-b3a6-74bdb8e53497.png)
+
 
 ## Testing
 
