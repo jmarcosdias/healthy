@@ -18,6 +18,7 @@ class Review(models.Model):
                                    blank=False)
     text_content = models.TextField(null=False, blank=False)
     creation_date_time = models.DateTimeField(auto_now_add=True)
+    last_update_date_time = models.DateTimeField(auto_now=True)
 
     class Meta:
         """
@@ -26,5 +27,4 @@ class Review(models.Model):
         ordering = ['-creation_date_time', 'created_by__username']
 
     def __str__(self):
-        return f'Review created by {self.created_by.username} on \
-            {self.creation_date_time}'
+        return f'Review #{self.id}'

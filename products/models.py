@@ -29,7 +29,9 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2,
                                  null=True, blank=True)
-                                 
 
     def __str__(self):
-        return self.title
+        if self.subtitle:
+            return f'{self.title} - {self.subtitle}'
+        else:
+            return self.title
