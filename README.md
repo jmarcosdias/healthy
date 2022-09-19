@@ -173,6 +173,11 @@ The following options will be implemented under "My Account" menu, as this seems
 
 ![image](https://user-images.githubusercontent.com/87392921/190874788-93751f6b-b1cd-42cc-9585-cfb3624ebc9d.png)
 
+### Start working on product requests
+
+![image](https://user-images.githubusercontent.com/87392921/190934977-a51cc481-8608-4f81-a096-fe891be9b558.png)
+
+
 ## Testing
 
 ### Manual tests
