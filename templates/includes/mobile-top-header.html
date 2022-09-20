@@ -34,7 +34,8 @@
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'reviews' %}" class="dropdown-item">My Product Reviews</a>
-            <a href="{% url 'product_requests' %}" class="dropdown-item">My Product Reviews</a>
+            <a href="{% url 'product_requests' %}" class="dropdown-item">My Product Requests</a>
+            <a href="{% url 'contact_requests' %}" class="dropdown-item">My Contact Requests</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
         {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>

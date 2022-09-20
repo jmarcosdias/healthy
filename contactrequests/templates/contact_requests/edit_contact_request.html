@@ -15,22 +15,26 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Reviews Management</h2>
-                <h5 class="text-muted">Add a Review</h5>
+                <h2 class="logo-font mb-4">Contact Requests Management</h2>
+                <h5 class="text-muted">Edit a Contact Request</h5>
                 <hr>
             </div>
         </div>
 
         <div class="row">
+            <div class="lead col-12 col-md-6 mb-3">Contact request #{{ contact_request.id }}</div>
+        </div>
+
+        <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_review' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_contact_request' contact_request.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {{ field | as_crispy_field }}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-success rounded-0" href="{% url 'reviews' %}">Cancel</a>
-                        <button class="btn btn-success rounded-0" type="submit">Add Review</button>
+                        <a class="btn btn-outline-success rounded-0" href="{% url 'contact_requests' %}">Cancel</a>
+                        <button class="btn btn-success rounded-0" type="submit">Update Contact Request</button>
                     </div>
                 </form>
             </div>            
