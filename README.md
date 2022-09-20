@@ -185,6 +185,10 @@ The product requests functionality is complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/191106097-f2fd1885-c472-4134-b3a6-74bdb8e53497.png)
 
+### Start working on news letter sign up form
+
+![image](https://user-images.githubusercontent.com/87392921/191142054-e3223570-eab3-418f-86ff-faadd4e10ba3.png)
+
 
 ## Testing
 
