@@ -189,6 +189,10 @@ The product requests functionality is complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/191142054-e3223570-eab3-418f-86ff-faadd4e10ba3.png)
 
+The contact requests module is complete.
+
+![image](https://user-images.githubusercontent.com/87392921/191142616-e4014f9c-c865-464a-8268-bc0f567370c1.png)
+
 
 ## Testing
 
