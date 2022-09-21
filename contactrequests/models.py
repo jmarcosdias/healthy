@@ -39,7 +39,6 @@ class ContactRequest(models.Model):
     contact_date = models.DateField(null=False, blank=False,
                                     validators=[MinValueValidator(
                                         limit_value=date.today)])
-                                    # [MinValueValidator(limit_value=date.today)])
     contact_timeslot = models.CharField(max_length=2,
                                         choices=TIMESLOT_CHOICES,
                                         default=TIME_SLOT_1,

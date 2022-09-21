@@ -136,7 +136,7 @@ a.category-badge > span.badge:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 10px;
+    bottom: 140px;
     right: 10px;
 }
 
@@ -338,7 +338,7 @@ input[name='q']::placeholder {
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 120px);
     }
 
     .display-4.logo-font.text-black {

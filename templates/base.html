@@ -140,6 +140,28 @@
 
     {% block content %}
     {% endblock %}
+    
+
+    <!-- Footer -->
+    <footer class="footer container-fluid fixed-bottom bg-success text-white">
+        <div class="row mt-2 py-2 px-2">
+            <div class="col-12 col-md-6 col-lg-4 text-left">
+                <form action="{ % url 'newsletter' % }" method="POST">
+                    {% csrf_token %}
+                    <div class="row mb-1 ml-2">Subscribe our newsletter: </div>
+                    <div class="row input-group mb-3 ml-2">
+                        <input class="form-control" type="email" name="email" placeholder="Enter your email address"
+                            aria-label="Email to subscribe newsletter" aria-describedby="subscribe-button">
+                        <button class="btn btn-warning" id="subscribe-button" type="submit" value="Subscribe">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 col-lg-8 font-small mt-2 text-right">
+                <div class="d-none d-md-block"><br><br></div>
+                <small>Copyright 2022 - My Greengrocer</small>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">
