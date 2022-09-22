@@ -19,7 +19,8 @@ class ProductRequest(models.Model):
 
     class Meta:
         """
-        Inner meta class of product requests. Used to change the default ordering.
+        Inner meta class of product requests.
+        Used to change the default ordering.
         """
         ordering = ['-creation_date_time', 'created_by__username']
 

@@ -4,8 +4,8 @@ Models definitions for the contact requests app
 
 
 from datetime import date
+from django import forms
 from django.db import models
-from django.core.validators import MinValueValidator
 from django.contrib.auth.models import User
 
 
@@ -33,13 +33,20 @@ class ContactRequest(models.Model):
         (TIME_SLOT_8, '4pm to 5pm'),
         (TIME_SLOT_9, '5pm to 6pm'),
     ]
+
+    def future_date(self):
+        """
+        Function used to make sure the contact_date will be in the future
+        Today or before are not allowed
+        """
+        if self <= date.today():
+            raise forms.ValidationError("Please choose a day from tomorrow!")
+        return self
     text_content = models.TextField(null=False, blank=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     contact_date = models.DateField(null=False, blank=False,
-                                    validators=[MinValueValidator(
-                                         limit_value=date.today
-                                         )])
+                                    validators=[future_date])
     contact_timeslot = models.CharField(max_length=2,
                                         choices=TIMESLOT_CHOICES,
                                         default=TIME_SLOT_1,
