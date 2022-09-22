@@ -3,10 +3,10 @@ Models definitions for the contact requests app
 """
 
 
-from datetime import date, datetime
+from datetime import date
 from django.db import models
-from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator
+from django.contrib.auth.models import User
 
 
 class ContactRequest(models.Model):
@@ -38,7 +38,8 @@ class ContactRequest(models.Model):
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     contact_date = models.DateField(null=False, blank=False,
                                     validators=[MinValueValidator(
-                                        limit_value=date.today)])
+                                         limit_value=date.today
+                                         )])
     contact_timeslot = models.CharField(max_length=2,
                                         choices=TIMESLOT_CHOICES,
                                         default=TIME_SLOT_1,
@@ -52,12 +53,6 @@ class ContactRequest(models.Model):
                                    blank=False)
     creation_date_time = models.DateTimeField(auto_now_add=True)
     last_update_date_time = models.DateTimeField(auto_now=True)
-    
-    def clean_contact_date(self):
-        contact_date = self.cleaned_data['contact_date']
-        if contact_date <= datetime.date.today():
-            raise forms.ValidationError("The date cannot be in the past!")
-        return contact_date
 
     class Meta:
         """
