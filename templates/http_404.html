@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-8 m-auto bg-success text-black">
+                <div class="my-5">
+                    <h1>
+                        404: Page not found
+                    </h1>
+                </div>    
+                <div class="my-5">
+                    <h3>
+                        Check the web address and try again or return to our <a class="text-white" href="{% url 'home' %}">home</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
