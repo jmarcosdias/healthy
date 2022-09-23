@@ -11,7 +11,7 @@ body {
     background: url('/media/home-greengrocer-background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: green;
-    height: calc(100vh - 270px);
+    height: calc(100vh - 290px);
     color: #28a745;
     font-family: 'Nunito';
 }
@@ -139,7 +139,7 @@ a.category-badge > span.badge:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 140px;
+    bottom: 150px;
     right: 10px;
 }
 
