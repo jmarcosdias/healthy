@@ -77,40 +77,34 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-success {
+    background: green;
     color: white;
 }
 
-.btn-outline-black {
+.btn-outline-success {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: green !important; /* use important to override link colors for <a> elements */
+    border: 1px solid green;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus {
+    background: green;
+    color: greenyellow !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+.shop-now-button:focus {
+    background: green;
+    color: greenyellow;
 }
 
 .btn-success:hover,
 .btn-success:active,
-.btn-success:focus,
-.btn-outline-success:hover,
-.btn-outline-success:active,
-.btn-outline-success:focus {
+.btn-success:focus {
     color: greenyellow;
 }
 
@@ -388,13 +382,13 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-success.rounded-0,
+    .btn.btn-success.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-success.rounded-0.btn-lg,
+    .btn.btn-success.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
