@@ -105,6 +105,15 @@ body {
     color: white;
 }
 
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus,
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus {
+    color: greenyellow;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -154,6 +163,23 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.discrete-link {
+    font-size: smaller;
+    color: white;
+}
+
+.discrete-link:link {
+    text-decoration: none;
+}
+
+.discrete-link:visited {
+    text-decoration: none;   
+}
+
+.discrete-link:hover {
+    color: yellowgreen;
 }
 
 /* ------------------------------- bootstrap toasts */
