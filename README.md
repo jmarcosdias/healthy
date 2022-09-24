@@ -193,6 +193,9 @@ The contact requests module is complete.
 
 ![image](https://user-images.githubusercontent.com/87392921/191142616-e4014f9c-c865-464a-8268-bc0f567370c1.png)
 
+The newsletter functionality is complete
+
+![image](https://user-images.githubusercontent.com/87392921/192100888-1200cb3f-73bf-4a76-bfb8-27733b5a9f4d.png)
 
 ## Testing
 
