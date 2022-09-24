@@ -28,7 +28,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['mdias-my-greengrocer.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-jmarcosdias-healthy-ap09h3ot0xf.ws-eu67.gitpod.io']
+    'https://8000-jmarcosdias-healthy-15ruaqtykf0.ws-eu67.gitpod.io']
 
 
 # Application definition
@@ -214,6 +214,3 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-
-# This is a temporarily setting to log emails to the console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
