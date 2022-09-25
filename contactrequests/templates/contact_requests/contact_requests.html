@@ -24,34 +24,39 @@
             </div>
         </div>
         <div class="row">
-            {% for contact_request in contact_requests %}
-                <div class="card border-success rounded-0 m-3">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Contact request #{{ contact_request.id }}</strong></h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Created by {{ contact_request.created_by }} on {{ contact_request.creation_date_time }}</h6>
-                        <h6 class="card-subtitle mb-2 text-muted">Last updated on {{ contact_request.last_update_date_time }}</h6>
-                        <p class="card-text text-success mb-2"><strong>Contact Date: </strong> {{ contact_request.contact_date }}</p>
-                        <p class="card-text text-success mb-2"><strong>Contact Time Slot: </strong>
-                            <select name="contact_timeslot" class="select form-control" id="id_contact_timeslot" disabled>
-                                <option value="S1">9am to 10am</option>
-                                <option value="S2">10am to 11am</option>
-                                <option value="S3">11am to 12pm</option>
-                                <option value="S4">12pm to 1pm</option>
-                                <option value="S5" selected>1pm to 2pm</option>
-                                <option value="S6">2pm to 3pm</option>
-                                <option value="S7">3pm to 4pm</option>
-                                <option value="S8">4pm to 5pm</option>
-                                <option value="S9">5pm to 6pm</option>
-                            </select>
-                        </p>
-                        <p class="card-text text-success mb-2"><strong>Description:</strong> {{ contact_request.text_content }}</p>
-                        <small class="mt-1 mb-0">
-                            <a href="{% url 'edit_contact_request' contact_request.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'confirm_delete_contact_request' contact_request.id %}">Delete</a>
-                        </small>
+            {% if contact_requests.count == 0 %}
+                <!-- Add some blank lines if there is nothing to show -->
+                <br><br><br><br><br><br><br><br>
+            {% else %}
+                {% for contact_request in contact_requests %}
+                    <div class="card border-success rounded-0 m-3">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Contact request #{{ contact_request.id }}</strong></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Created by {{ contact_request.created_by }} on {{ contact_request.creation_date_time }}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Last updated on {{ contact_request.last_update_date_time }}</h6>
+                            <p class="card-text text-success mb-2"><strong>Contact Date: </strong> {{ contact_request.contact_date }}</p>
+                            <p class="card-text text-success mb-2"><strong>Contact Time Slot: </strong>
+                                <select name="contact_timeslot" class="select form-control" id="id_contact_timeslot" disabled>
+                                    <option value="S1">9am to 10am</option>
+                                    <option value="S2">10am to 11am</option>
+                                    <option value="S3">11am to 12pm</option>
+                                    <option value="S4">12pm to 1pm</option>
+                                    <option value="S5" selected>1pm to 2pm</option>
+                                    <option value="S6">2pm to 3pm</option>
+                                    <option value="S7">3pm to 4pm</option>
+                                    <option value="S8">4pm to 5pm</option>
+                                    <option value="S9">5pm to 6pm</option>
+                                </select>
+                            </p>
+                            <p class="card-text text-success mb-2"><strong>Description:</strong> {{ contact_request.text_content }}</p>
+                            <small class="mt-1 mb-0">
+                                <a href="{% url 'edit_contact_request' contact_request.id %}">Edit</a> | 
+                                <a class="text-danger" href="{% url 'confirm_delete_contact_request' contact_request.id %}">Delete</a>
+                            </small>
+                        </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            {% endif%}
         </div>
     </div>
 {% endblock %}
