@@ -77,7 +77,7 @@ body {
     min-width: 260px;
 }
 
-.btn-success, .button {
+.btn-success {
     background: green;
     color: white;
 }
