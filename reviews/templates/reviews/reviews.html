@@ -23,20 +23,25 @@
             </div>
         </div>
         <div class="row">
-            {% for review in reviews %}
-                <div class="card border-success rounded-0 m-3">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ review.product }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Created by {{ review.created_by }} on {{ review.creation_date_time }}</h6>
-                        <h6 class="card-subtitle mb-2 text-muted">Last updated on {{ review.last_update_date_time }}</h6>
-                        <p class="card-text text-success">{{ review.text_content }}</p>
-                        <small class="mt-1 mb-0">
-                            <a href="{% url 'edit_review' review.id %}">Edit</a> | 
-                            <a class="text-danger" href="{% url 'confirm_delete_review' review.id %}">Delete</a>
-                        </small>
+            {% if reviews.count == 0 %}
+                <!-- Add some blank lines if there is nothing to show -->
+                <br><br><br><br><br><br><br><br>
+            {% else %}
+                {% for review in reviews %}
+                    <div class="card border-success rounded-0 m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ review.product }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Created by {{ review.created_by }} on {{ review.creation_date_time }}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Last updated on {{ review.last_update_date_time }}</h6>
+                            <p class="card-text text-success">{{ review.text_content }}</p>
+                            <small class="mt-1 mb-0">
+                                <a href="{% url 'edit_review' review.id %}">Edit</a> | 
+                                <a class="text-danger" href="{% url 'confirm_delete_review' review.id %}">Delete</a>
+                            </small>
+                        </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 {% endblock %}
