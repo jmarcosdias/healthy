@@ -209,7 +209,21 @@ The newsletter functionality is complete
 
 ### Validator tests
 
-### Automated tests
+## SEO
+
+I have worked on keyword research, with the goal of using that data for search engine optimization. My focus was on finding some long-tail keywords, with a high enough volume and low enough competition.
+
+As a result of this research, I found the following keywords that people care about. These keywords have a relatively high popularity and a relatively low competition, for the United States territory, which is where the first version of <em>My Greengrocer</em> website is planned to be implemented.
+
+* fruit and vegetable store
+* online delivery of fruits
+* buy vegetables online
+* online fruits and vegetables
+* online fresh vegetables
+* fresh fruits delivery near me
+* buy online fruits
+
+In this research, I used the [Wordtracker](https://www.wordtracker.com/) website. The sitemap was obtained by using the [XML Sitemaps](https://www.xml-sitemaps.com/) website, and then I have created the robots.txt file to tell search engine crawlers where they can go and where they cannot go.
 
 ## Deployment
 
