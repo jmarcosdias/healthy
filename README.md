@@ -231,6 +231,7 @@ In this research, I used the [Wordtracker](https://www.wordtracker.com/) website
 
 ![image](https://user-images.githubusercontent.com/87392921/192174444-7eeca1e2-a67c-4f0b-9dd6-3bbf21849999.png)
 
+![image](https://user-images.githubusercontent.com/87392921/192176065-4f52d284-1ddc-40d7-8605-f563d1cc8a44.png)
 
 ## Deployment
 
