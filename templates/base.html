@@ -149,24 +149,33 @@
 
     <!-- Footer -->
     <footer class="footer container-fluid bg-success text-white">
-        <div class="row mt-2 py-2 px-2">
-            <div class="col-12 col-md-6 col-lg-4 text-left">
-                <form action="{% url 'subscribe_newsletter' %}" method="POST">
-                    {% csrf_token %}
-                    <div class="row mb-1 ml-2">Subscribe to our newsletter: </div>
-                    <div class="row input-group mb-3 ml-2">
-                        <input class="form-control" type="email" name="email" placeholder="Your email address"
-                            aria-label="Email to subscribe newsletter" aria-describedby="subscribe-button">
-                        <button class="btn btn-warning" id="subscribe-button" type="submit" value="Subscribe">Subscribe</button>
-                    </div>
-                    <div class="row ml-2 mt-0 text-left">
-                        <a class="discrete-link" href="{% url 'unsubscribe_newsletter' %}">Unsubscribe to our newsletter</a>
-                    </div>
-                </form>
+        <div class="row mt-2">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="col">
+                    <form action="{% url 'subscribe_newsletter' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="row mb-1">Subscribe to our newsletter: </div>
+                        <div class="row input-group mb-3">
+                            <input class="form-control" type="email" name="email" placeholder="Your email address"
+                                aria-label="Email to subscribe newsletter" aria-describedby="subscribe-button">
+                            <button class="btn btn-warning" id="subscribe-button" type="submit" value="Subscribe">Subscribe</button>
+                        </div>
+                        <div class="row mt-0">
+                            <a class="discrete-link" href="{% url 'unsubscribe_newsletter' %}">Unsubscribe to our newsletter</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-8 font-small mt-2 text-right">
-                <div class="d-none d-md-block"><br><br></div>
-                <small>Copyright 2022 - My Greengrocer</small>
+            <div class="col-12 col-md-2 col-lg-4">
+                <div class="col"></div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 font-small">
+                <div class="text-right">
+                    <a class="discrete-link" href="https://www.facebook.com/people/My-Greengrocer/100086290568321/" target="_blank"><i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+                </div>
+                <div class="text-right">
+                    <small>Copyright 2022 - My Greengrocer</small>
+                </div>
             </div>
         </div>
     </footer>
