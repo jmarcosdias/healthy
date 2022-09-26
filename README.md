@@ -209,6 +209,8 @@ The newsletter functionality is complete
 
 ### Validator tests
 
+### Marketing
+
 ## SEO
 
 I have worked on keyword research, with the goal of using that data for search engine optimization. My focus was on finding some long-tail keywords, with a high enough volume and low enough competition.
@@ -224,6 +226,11 @@ As a result of this research, I found the following keywords that people care ab
 * buy online fruits
 
 In this research, I used the [Wordtracker](https://www.wordtracker.com/) website. The sitemap was obtained by using the [XML Sitemaps](https://www.xml-sitemaps.com/) website, and then I have created the robots.txt file to tell search engine crawlers where they can go and where they cannot go.
+
+## Facebook page
+
+![image](https://user-images.githubusercontent.com/87392921/192174444-7eeca1e2-a67c-4f0b-9dd6-3bbf21849999.png)
+
 
 ## Deployment
 
