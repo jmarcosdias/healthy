@@ -15,11 +15,17 @@
 5. [Testing](#testing)
    1. [Manual tests](#manual-tests)
    2. [Validator tests](#validator-tests)
-   3. [Automated tests](#automated-tests)
-6. [Deployment](#deployment)
+6. [Web marketing strategies](#web-marketing-strategies)
+   1. [Search Engine Optimization](#search-engine-optimization)
+   2. [Web marketing strategies beyond SEO](#web-marketing-strategies-beyond-seo)
+7. [Deployment](#deployment)
    1. [How to deploy the site to heroku](#how-to-deploy-the-site-to-heroku)
    2. [How to deploy the site locally](#how-to-deploy-the-site-locally)
-7. [Credits](#credits)
+8. [Credits](#credits)
+
+
+
+
 
 ## Purpose
 
@@ -209,9 +215,9 @@ The newsletter functionality is complete
 
 ### Validator tests
 
-### Marketing
+## Web marketing strategies
 
-## SEO
+### Search Engine Optimization
 
 I have worked on keyword research, with the goal of using that data for search engine optimization. My focus was on finding some long-tail keywords, with a high enough volume and low enough competition.
 
@@ -227,11 +233,25 @@ As a result of this research, I found the following keywords that people care ab
 
 In this research, I used the [Wordtracker](https://www.wordtracker.com/) website. The sitemap was obtained by using the [XML Sitemaps](https://www.xml-sitemaps.com/) website, and then I have created the robots.txt file to tell search engine crawlers where they can go and where they cannot go.
 
-## Facebook page
+### Web marketing strategies beyond SEO
+
+The objective of this activity is to promote the products offered by the <em>My Greengrocer</em> website and its corresponding delivery service, in order to connect with more potential buyers. After all, what is required is to reach people that are most interested in buying fruits and vegetables online.
+
+The content marketing strategy was initially evaluated, but due to the considerable investment that this strategy requires, it was disconsidered.
+
+I will use email marketing, because this is a free way to get a direct line to an initially reduced list of existing and potential customers. Then, even if that list grows, the return on investment for maintaining this type of marketing is expected to be positive.
+
+Organic social marketing is time-consuming and definitely will not reach all the potential customers of <em>My Greengrocer</em>. On the other hand, it is free, it has the potential to reach a lot of existing and future customers, and it is a way for me to keep in touch with those customers. So I decided to choose this strategy and created a <em>My Greengrocer</em> facebook page.
+
+#### Facebook page
+
+Here are some screenshots of the facebook page:
 
 ![image](https://user-images.githubusercontent.com/87392921/192174444-7eeca1e2-a67c-4f0b-9dd6-3bbf21849999.png)
 
 ![image](https://user-images.githubusercontent.com/87392921/192176065-4f52d284-1ddc-40d7-8605-f563d1cc8a44.png)
+
+
 
 ## Deployment
 
