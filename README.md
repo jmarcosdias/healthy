@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-1. [Purpose](#purpose)
+1. [Overview](#overview)
 2. [Features](#features)
-   1. [Existing Features](#existing-features)
-   2. [Features Left to Implement](#features-left-to-implement)
+   1. [Existing features](#existing-features)
+   2. [Features left to implement](#features-left-to-implement)
 3. [Design](#design)
-   1. [User Stories](#user-stories)
+   1. [User stories](#user-stories)
    2. [Wireframes](#wireframes)
-   3. [Data Model](#data-model)
+   3. [Data model](#data-model)
 4. [Project follow-up](#project-follow-up)
    1. [User stories defined for project's phase 1](#user-stories-defined-for-projects-phase-1)
 5. [Testing](#testing)
@@ -24,34 +24,48 @@
    2. [How to deploy the site locally](#how-to-deploy-the-site-locally)
 9. [Credits](#credits)
 
+## Overview
 
-
-
-
-## Purpose
-
-The purpose of this application is to support the business of a greengrocer.
+The purpose of this project is to develop a website to sell fruits and vegetables. We intend to address the needs of anyone who would like to eat more fruits and vegetables, and find to be more practical, faster and pleasant to buy online.
 
 The online store will start with three categories of products: fresh fruits, fresh vegetables and boxes.
 
 The boxes are packed products that can contain anything. There is a product description field that can be used by the seller to describe the contents of each box.
 
+The only option for payment is by credit card. In addition to the product browsing, searching and checkout features, the following is implemented:
+
+* Product reviews module (all CRUD functionality is implemented)
+* Product requests module (all CRUD functionality is implemented)
+* Contact requests module (all CRUD functionality is implemented)
+* Subscribe to and unsubscribe from newsletter
+
+The main technologies are Python, Django framework, Bootstrap framework, HTML5, CSS and JavaScript.
+
+Before completing the purchase, the user needs to register and login, because the greengrocer needs to collect and keep some essential information, for each user and each order, not only to deliver the product to the user but also to communicate to the greengrocer's sales and billing systems. This website is using django-allauth as the authentication mechanism.
 
 ## Features
 
-### Existing Features
+### Existing features
 
 The users are able to list products by category or all products from all categories and then they can sort each list alphabetically or by price.
 
-Browsing a list of products, the users can select a product and add it to the shopping bag, specifying the quantity.
+When browsing a list of products, the users can select a product and add it to the shopping bag, specifying the quantity.
 
 The contents of the shopping bag are stored in the HTTP session that is established between the HTTP client (browser) and the HTTP server. By storing these contents in the HTTP session and making sure there is always a link to the checkout functionality, the web application allows the user to consolidate their purchase at any point after adding one or more products to the bag.
 
-### Features Left to Implement
+Registered users can buy products and they can also manage their own product reviews, product requests and contact requests.
+
+Anyone can browse the products and subscribe to or unsubscribe from the newsletter.
+
+### Features left to implement
+
+The only option to pay is by credit card. I am analyzing more options for the customer to pay in the future.
+
+I need to limit the delivery area of the products for logistics reasons. This functionality is under analysis and hopefully will be implemented soon, to allow the business to start.
 
 ## Design
 
-### User Stories
+### User stories
 
 #### Phase 1
 
@@ -91,7 +105,7 @@ Here are the main wireframes for viewing products in both desktop and mobile app
 
 ![image](https://user-images.githubusercontent.com/87392921/190019667-ebc73b2e-fbcf-4a53-a6eb-cd8a4b2c2f90.png)
 
-### Data Model
+### Data model
 
 ## Project follow-up
 
