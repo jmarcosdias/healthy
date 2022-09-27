@@ -18,10 +18,11 @@
 6. [Web marketing strategies](#web-marketing-strategies)
    1. [Search Engine Optimization](#search-engine-optimization)
    2. [Web marketing strategies beyond SEO](#web-marketing-strategies-beyond-seo)
-7. [Deployment](#deployment)
+7. [E-commerce business model](#e-commerce-business-model)
+8. [Deployment](#deployment)
    1. [How to deploy the site to heroku](#how-to-deploy-the-site-to-heroku)
    2. [How to deploy the site locally](#how-to-deploy-the-site-locally)
-8. [Credits](#credits)
+9. [Credits](#credits)
 
 
 
@@ -241,7 +242,7 @@ The content marketing strategy was initially evaluated, but due to the considera
 
 I will use email marketing, because this is a free way to get a direct line to an initially reduced list of existing and potential customers. Then, even if that list grows, the return on investment for maintaining this type of marketing is expected to be positive.
 
-Organic social marketing is time-consuming and definitely will not reach all the potential customers of <em>My Greengrocer</em>. On the other hand, it is free, it has the potential to reach a lot of existing and future customers, and it is a way for me to keep in touch with those customers. So I decided to choose this strategy and created a <em>My Greengrocer</em> facebook page.
+Organic social marketing is time-consuming and may not reach all the potential customers of <em>My Greengrocer</em>. On the other hand, it is free, it has the potential to reach a lot of existing and future customers, and it is a way for me to keep in touch with those customers. So I decided to choose this strategy and created a <em>My Greengrocer</em> facebook page.
 
 #### Facebook page
 
@@ -251,6 +252,21 @@ Here are some screenshots of the facebook page:
 
 ![image](https://user-images.githubusercontent.com/87392921/192176065-4f52d284-1ddc-40d7-8605-f563d1cc8a44.png)
 
+## E-commerce business model
+
+<em>My Greengrocer</em> is an online store that sells fruits and vegetables directly to the customer. 
+
+It will be successful with all the customers who might be interested in eating fresh and healthy fruits and vegetables and have little time to spend shopping. So they will find it better to buy online.
+
+The initial marketing strategies that were chosen are email marketing and organic social marketing, because <em>My Greengrocer</em> is a small business and there is no budget to pay for marketing at this early stage.
+
+The fruits and vegetables are sold directly to the consumers, so the e-commerce business model of <em>My Greengrocer</em> is business-to-consumer (B2C).
+
+The payment for the products is taken online. The current version of <em>My Greengrocer</em> website only accepts credit card payments via [Stripe](https://stripe.com/en-ie) payment processing platform. I intend to offer more options for paying in the near future.
+
+We have a reduced number of employees. We offer a request-for-contact functionality, which is available via our website. We can contact customers 7 days a week, but we have no capacity to contact more than one customer in a given time-slot. This validation of "maximum one contact per time-slot" is a requirement for us to work, so it is implemented by the web application.
+
+Fruits and vegetables delivery logistics require us to limit the delivery area. We are working in this direction, but this functionality is not yet implemented.
 
 
 ## Deployment
