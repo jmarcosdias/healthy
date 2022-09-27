@@ -26,7 +26,13 @@
 
 ## Overview
 
-The purpose of this project is to develop a website to sell fruits and vegetables. We intend to address the needs of anyone who would like to eat more fruits and vegetables, and find to be more practical, faster and pleasant to buy online.
+The purpose of this project is to develop the <em>My Greengrocer</em> web application, which purpose is to sell fruits and vegetables online. We intend to address the needs of anyone who would like to eat more fruits and vegetables, and find to be more practical, faster and pleasant to buy online.
+
+The objective of this project is to develop the <em>My Greengrocer</em> web application, whose purpose is to sell fruits and vegetables online. 
+
+With <em>My Greengrocer</em>, I intend to address the needs of anyone who would like to eat more fruits and vegetables, and find it to be more practical, faster and pleasant to buy them online.
+
+The value this web application provides to the user is that they will be able to buy healthy and fresh fruits and vegetables online, of good quality, instead of having to go themselves to the grocery or to the supermarket.
 
 The online store will start with three categories of products: fresh fruits, fresh vegetables and boxes.
 
