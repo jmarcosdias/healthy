@@ -107,7 +107,7 @@ These are the users stories defined for the first phase of the project, mapped t
 
 #### Phase 2
 
-Here are the user stories that make up the second phase of the project.
+Here are the user stories that make up the second phase of the project, mapped to the project goals.
 
 * USER STORY: Products management - As a Superuser I want to be able to add, update and delete products.  PROJECT GOAL: Add, update and delete products.
 * USER STORY: Shopping bag - As a Site User I want to be able to add products to the shopping bag.  PROJECT GOAL: Shopping bag.
