@@ -108,7 +108,7 @@ Said that, here are the entities and attributes of the <em>My Greengrocer</em> d
 * Category
   * id (pk)
   * name
-  * friendly name
+  * friendly_name
   
 * ContactRequest
   * id (pk)
@@ -123,7 +123,7 @@ Said that, here are the entities and attributes of the <em>My Greengrocer</em> d
   
 * NewsletterSubscription
   * id (pk)
-  * email
+  * email (unique)
   * creation_date_time
   
 * Order
@@ -191,9 +191,13 @@ Said that, here are the entities and attributes of the <em>My Greengrocer</em> d
   * default_postcode
   * default_country
 
-
 Notes: 
-* Product.rating is not used by the application in this version but I decided to include it in the datamodel to use in future versions of the application.
+* Product.rating is not used by the application in this version. I decided to include it in the data model, to use it in future versions of the application.
+
+Below, I present a simplified entity-relationship diagram. There we can see all the relationships between the entities and the attributes involved in these relationships. The remaining attributes are omitted to make the diagram simpler. The <em>My Greengrocer</em> entities are highlighted.
+
+![image](https://user-images.githubusercontent.com/87392921/192906680-59d9a745-ab41-403d-bc1c-348f64037e12.png)
+
 
 ### Project goals
 
