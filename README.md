@@ -132,7 +132,7 @@ Here are the user stories that make up the second phase of the project, mapped t
 
 ### Wireframes
 
-Here are the main wireframes for viewing products in both desktop and mobile app. They were used during the design phase, to get a first idea of how the web site will look like.
+Here are some examples of the wireframes used during the design phase. The wireframes were very useful during that phase, for me to get a first idea of how the web site would look like.
 
 #### List of products in desktop
 
