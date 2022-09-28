@@ -291,9 +291,239 @@ Fruits and vegetables delivery logistics require us to limit the delivery area. 
 
 ## Deployment
 
+The website is deployed to [heroku](https://heroku.com).
+
+Here is the link for the live site https://mdias-my-greengrocer.herokuapp.com/
+
 ### How to deploy the site to heroku
 
-### How to deploy the site locally
+The below instructions detail how to deploy the site to https://mdias-my-greengrocer-new.herokuapp.com/. In other words, these instructions describe how to deploy this application to heroku, using the mdias-my-greengrocer-new name for the heroku app.
+
+When deploying, you can use any other available name for the heroku app. For example, this site is currently deployed to heroku, using the mdias-my-greengrocer name for the heroku app (https://mdias-my-greengrocer.herokuapp.com/).
+
+1. Create a GitPod workspace based on the main branch of the [GitHub repository](https://github.com/jmarcosdias/healthy)
+
+2. In the GitPod workspace
+
+   1. Login to heroku (use your credentials):
+      ```
+      heroku login -i
+      ```
+
+   2. Create heroku remote for a new app choosing the region.
+      
+      For example, for the Europe region:
+      ```
+      heroku create -a mdias-my-greengrocer-new --region eu
+      ```
+      
+      If you prefer other regions, you can see the available regions by using:
+      ```
+      heroku regions
+      ```
+
+      You can confirm that the heroku remote has been created, by using the following command
+      ```
+      git remote -v
+      ```
+      and making sure you see those two heroku lines.
+      
+      ```
+      gitpod /workspace/healthy (main) $ git remote -v
+      heroku  https://git.heroku.com/mdias-my-greengrocer-new.git (fetch)
+      heroku  https://git.heroku.com/mdias-my-greengrocer-new.git (push)
+      origin  https://github.com/jmarcosdias/healthy.git (fetch)
+      origin  https://github.com/jmarcosdias/healthy.git (push)
+      ```
+
+   3. Use heroku ```addons:create``` to create the main database
+      ```
+      heroku addons:create heroku-postgresql --as=DATABASE
+      ```
+      
+   4. Use heroku config to set the SECRET_KEY variable
+      ```
+      heroku config:set SECRET_KEY='<a secret key you define>'
+      ```
+      
+      You can use an online secret key generator to generate your secret key, for example https://django-secret-key-generator.netlify.app.
+      
+   5. Use heroku config to set disable collect static   
+      ```
+      heroku config:set DISABLE_COLLECTSTATIC=1
+      ```
+      
+   6. Update the settings.py file inside my_greengrocer project, adding to the allowed hosts list, 
+      the URL of the application you are deploying.
+   
+      1. Make sure 'mdias-my-greengrocer-new.herokuapp.com' is in the ALLOWED_HOSTS list
+      
+      ```
+      ALLOWED_HOSTS = ['mdias-my-greengrocer-new.herokuapp.com', 'localhost']
+      ```
+      
+      2. Commit your changes
+         ```
+         git add .
+         git commit -m "Update allowed hosts in settings.py file"
+         ```
+         
+   7. Push to heroku git repository
+      ```
+      git push heroku main
+      ```
+      
+   8. Use heroku config to unset disable collect static
+      ```
+      heroku config:unset DISABLE_COLLECTSTATIC
+      ```
+      
+   9. Use heroku run to make migrations
+      ```
+      heroku run python3 manage.py makemigrations
+      ```
+      
+   10. Use heroku run to migrate
+       ```
+       heroku run python3 manage.py migrate
+       ```
+       
+   11. Use heroku run to load categories
+       ```
+       heroku run python3 manage.py loaddata categories
+       ```
+       
+   12. Use heroku run to load products
+       ```
+       heroku run python3 manage.py loaddata products
+       ```
+   
+3. In the AWS website, logged to your AWS account, do the following to setup your 
+   AWS account to host media and static files for the <em>My Greengrocer</em> website. 
+
+   1. Go to Amazon S3, create a bucked with a name equals (or similar to) the name of your
+      heroku app. For example, the bucket name can be "my-green-grocer" or any other name you prefer.
+      The next steps in these instructions are refering this bucket as "my-green-grocer".
+      
+   2. Go to the Properties of the "my-green-grocer" bucket, click edit "Static website hosting"
+      and then Enable static website hosting.
+      
+   3. Go to the Permissions of the "my-green-grocer" bucket, click edit "Cross-origin resource sharing (CORS)"
+      and update the JSON configuration there to the following.
+      ```
+      [
+          {
+              "AllowedHeaders": [
+                  "Authorization"
+              ],
+              "AllowedMethods": [
+                  "GET"
+              ],
+              "AllowedOrigins": [
+                  "*"
+              ],
+              "ExposeHeaders": []
+          }
+      ]
+      ```
+      
+   4. Go to the Permissions of the "my-green-grocer" bucket, click edit "Bucket policy"
+      and then click "Policy Generator". The "AWS Policy Generator" page will open in a new tab.
+      
+   5. In AWS Policy Generator page, choose/fill the following in the form:
+      Type of Policy: S3 Bucket Policy
+      Principal: * (to allow all)
+      Action: GetObject
+      Amazon Resource Name (ARN): get this from the “my-green-grocer” bucket
+      Click "Add Statement" and then click "Generate Policy".
+      Copy the text that was generated (which is the policy).
+      You will paste this into the bucket policy editor.
+      
+   6. Go back to the "Edit bucket policy" page that should be still open in your browser.
+      Paste the policy text into the bucket policy editor.
+      Add a slash and a star at the end of the value of the Resource key inside the policy.
+      
+      The policy then should look like this:
+      ```
+      {
+        "Version": "2012-10-17",
+        "Id": "Policy1659646953711",
+        "Statement": [
+          {
+            "Sid": "Stmt1659646949079",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-green-grocer/*"
+          }
+        ]
+      }
+      ```
+      
+   7. Go to the Permissions of the "my-green-grocer" bucket, click edit "Access control list (ACL)"
+      and then Enable the "Everyone (public access) - List" option.
+      
+   8. Go to Identity Access Management (IAM).
+      
+      Here you will create a group for the user to live in. Then create an access policy giving the group
+      access to the s3 bucket you created ("my-green-grocer" bucket). Then you will assign the user to 
+      the group so it can use the policy to access all the static and media files.
+      
+      Here are the steps to do what is described above:
+      
+      1. Create a group named "manage-my-green-grocer" (or choose another name if you prefer)
+      2. In the "manage-my-green-grocer" group Permissions, choose Add permissions -> Attached policies.
+      3. Click in "Create policy". A new page will open (create policy page) in a new tab.
+      4. In the Create policy page, click in the JSON tab, click in the "Import managed policy" link,
+         then search "AmazonS3FullAccess", choose this line and then click "Import".
+         The JSON text that will be imported, should look like this:
+         ```
+          {
+              "Version": "2012-10-17",
+              "Statement": [
+                  {
+                      "Effect": "Allow",
+                      "Action": [
+                          "s3:*",
+                          "s3-object-lambda:*"
+                      ],
+                      "Resource": "*"
+                  }
+              ]
+          }
+         ```
+         Get the bucket ARN from S3 and use it to fill the Resource in JSON to create a list with two resources.
+         After this, the policy should look like this:
+         ```
+          {
+              "Version": "2012-10-17",
+              "Statement": [
+                  {
+                      "Effect": "Allow",
+                      "Action": [
+                          "s3:*",
+                          "s3-object-lambda:*"
+                      ],
+                      "Resource": [
+                          "arn:aws:s3:::my-green-grocer",
+                          "arn:aws:s3:::my-green-grocer/*"
+                      ]
+                  }
+              ]
+          }
+         ```
+         You can then go ahead (click Next, Next) and when you can fill a name and a description for 
+         your policy. For example: name "my-greengrocer-policy", description "Access to S3 Bucket for My Greengrocer static files".
+         Then click "Create Policy" to create it. 
+         
+      5. Go back to the IAM page, click in "User Groups" and "manage-my-green-grocer" group, 
+         then go to Permissions for this user group, click "Add Permissions" and then "Attach Policies". 
+         Select the "my-greengrocer-policy" line and then click "Add Permissions".
+         
+      6. In the IAM page, click in "Users" and then "Add users". Give the user the 
+         name "my-green-grocer-static-files-user", select AWS credential type = 
+         "Access key - Programmatic access" for this user. Add this user to the "manage-my-green-grocer" group.
+         Create the user and download the csv file. Keep the contents of that csv file safe. You will need this.
 
 ## Credits
 
