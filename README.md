@@ -81,7 +81,121 @@ There is a product details page with little content. Listing the product reviews
 
 ## Design
 
-### Project Goals
+### Data model
+
+The format I chose to first present here the entities and attributes of the data model is the following:
+
+* Entity
+  * attribute1 
+  * attribute2
+  * attribute3
+  * ...
+  * attributeN
+
+For each attribute, I have included the following in parenthesis where applicable.
+
+* The constraints:
+  * pk = primary key
+  * fk = foreign key 
+  * unique 
+  * unique per field name
+* The specification of the relation:
+  * one-to-one 
+  * n-to-one
+
+Said that, here are the entities and attributes of the <em>My Greengrocer</em> data model.
+   
+* Category
+  * id (pk)
+  * name
+  * friendly name
+  
+* ContactRequest
+  * id (pk)
+  * text_content
+  * full_name
+  * phone_number
+  * contact_date
+  * contact_timeslot (unique per contact_date)
+  * created_by (fk to User, n-to-one relationship)
+  * creation_date_time
+  * last_update_date_time
+  
+* NewsletterSubscription
+  * id (pk)
+  * email
+  * creation_date_time
+  
+* Order
+  * id (pk)
+  * order_number
+  * user_profile (fk to UserProfile, n-to-one relationship)
+  * full_name
+  * email
+  * phone_number
+  * country
+  * postcode
+  * town_or_city
+  * street_address1
+  * street_address2
+  * county
+  * date
+  * delivery_cost
+  * order_total
+  * grand_total
+  * original_bag
+  * stripe_pid
+
+* OrderLineItem
+  * id (pk)
+  * order (fk to Order, n-to-one relationship)
+  * product (fk to Product, n-to-one relationship)
+  * quantity
+  * lineitem_total
+  
+* Product
+  * id (pk)
+  * category (fk to Category, n-to-one relationship)
+  * sku
+  * title
+  * subtitle
+  * price
+  * description
+  * image_url
+  * image
+  * rating
+  
+* ProductRequest
+  * id (pk)
+  * created_by (fk to User, n-to-one relationship)
+  * text_content
+  * creation_date_time
+  * last_update_date_time
+  
+* Review
+  * id (pk)
+  * product (fk to Product, n-to-one relationship)
+  * created_by (fk to User, n-to-one relationship)
+  * text_content
+  * creation_date_time
+  * last_update_date_time
+  
+* UserProfile
+  * id (pk)
+  * user (fk to User, one-to-one relationship)
+  * default_phone_number
+  * default_street_address1
+  * default_street_address2
+  * default_town_or_city
+  * default_county
+  * default_postcode
+  * default_country
+
+
+Notes: 
+* Product.rating is not used by the application in this version but I decided to include it in the datamodel to use in future versions of the application.
+
+### Project goals
 
 Here is a summary of the project goals:
 
