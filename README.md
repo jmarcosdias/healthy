@@ -71,33 +71,54 @@ I need to limit the delivery area of the products for logistics reasons. This fu
 
 ## Design
 
+### Project Goals
+
+Here is a summary of the project goals:
+
+* Create account (user)
+* Log in (registered user)
+* Select products to buy (user)
+* Buy products / Finalize the purchase (user)
+* Understand what they would be buying if they decided to buy each product (user)
+* Easily identify what they want to purchase (user)
+* Add, update and delete products (superuser only)
+* Shopping bag (user)
+* Profile (registered user)
+* Feedback messages (user)
+* Manage product reviews (registered user)
+* Manage product requests (registered user)
+* Manage contact requests (registered user)
+* Subscribe/unsubscribe newsletter (user)
+
 ### User stories
 
 #### Phase 1
 
-These are the users stories defined for the first phase of the project.
+These are the users stories defined for the first phase of the project, mapped to the project goals.
 
-* USER STORY: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account.
-* USER STORY: Create account - As a Site User I want to be able to create an account so that I can log in to the website.
-* USER STORY: Log in - As a Registered Site User I want to be able to log in to the website so that I can buy products.
-* USER STORY: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
-* USER STORY: View list of products - As a Registered Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.
-* USER STORY: View individual product details - As a Registered Site User I want to be able to view the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
-* USER STORY: Sort the list of available products - As a Registered Site User I want to be able to sort products by title and price so that I can easily identify what I want to purchase.
+* USER STORY: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account. PROJECT GOALS: Log in, Create account.
+* USER STORY: Create account - As a Site User I want to be able to create an account so that I can log in to the website.  PROJECT GOALS: Log in, Create account.
+* USER STORY: Log in - As a Site User I want to be able to log in to the website so that I can buy products.  PROJECT GOALS: Log in, Buy products.
+* USER STORY: Recover password - As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.  PROJECT GOALS: Log in.
+* USER STORY: View list of products - As a Site User I want to be able to view a list of products for each product category, so that I can select some products to purchase.  PROJECT GOALS: Select products to buy.
+* USER STORY: View individual product details - As a Site User I want to be able to view the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.  PROJECT GOALS: Understand what they would be buying if they decided to buy each product.
+* USER STORY: Sort the list of available products - As a Site User I want to be able to sort products by title and price so that I can easily identify what I want to purchase.  PROJECT GOALS: Easily identify what they want to purchase.
+
 
 #### Phase 2
 
 Here are the user stories that make up the second phase of the project.
 
-* USER STORY: Products management
-* USER STORY: Shopping bag
-* USER STORY: Checkout
-* USER STORY: Profile
-* USER STORY: Feedback messages to user
-* USER STORY: Products reviews
-* USER STORY: Products requests
-* USER STORY: Contacts requests
-* USER STORY: Newsletter signup form
+* USER STORY: Products management - As a Superuser I want to be able to add, update and delete products.  PROJECT GOAL: Add, update and delete products.
+* USER STORY: Shopping bag - As a Site User I want to be able to add products to the shopping bag.  PROJECT GOAL: Shopping bag.
+* USER STORY: Checkout - As a Site User I want to be able to finalize my purchase by paying with credit card.  PROJECT GOAL: Buy products / Finalize the purchase.
+* USER STORY: Profile - As a Registered User I want to be able to see and update my profile.  PROJECT GOAL: Profile.
+* USER STORY: Feedback messages to users - As a Site User I want to receive ongoing feedback messages in the website, according to the actions I take in the website.  PROJECT GOAL: Feedback messages.
+* USER STORY: Product reviews - As a Registered User I want to be able to manage my product reviews.  PROJECT GOAL: Manage product reviews.
+* USER STORY: Product requests - As a Registered User I want to be able to manage my product requests.  PROJECT GOAL: Manage product requests.
+* USER STORY: Contact requests - As a Registered User I want to be able to manage my contact requests  PROJECT GOAL: Manage contact requests.
+* USER STORY: Newsletter signup form - As a Site User I want to be able to subscribe to and unsubscribe from the newsletters.  PROJECT GOAL: Subscribe/unsubscribe newsletter.
+
 
 ### Wireframes
 
