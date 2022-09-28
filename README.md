@@ -353,47 +353,32 @@ When deploying, you can use any other available name for the heroku app. For exa
       heroku config:set DISABLE_COLLECTSTATIC=1
       ```
       
-   6. Update the settings.py file inside my_greengrocer project, adding to the allowed hosts list, 
-      the URL of the application you are deploying.
-   
-      a. Make sure 'mdias-my-greengrocer-new.herokuapp.com' is in the ALLOWED_HOSTS list
-      
-      ```
-      ALLOWED_HOSTS = ['mdias-my-greengrocer-new.herokuapp.com', 'localhost']
-      ```
-      
-      b. Commit your changes
-         ```
-         git add .
-         git commit -m "Update allowed hosts in settings.py file"
-         ```
-         
-   7. Push to heroku git repository
+   6. Push to heroku git repository
       ```
       git push heroku main
       ```
       
-   8. Use heroku config to unset disable collect static
+   7. Use heroku config to unset disable collect static
       ```
       heroku config:unset DISABLE_COLLECTSTATIC
       ```
       
-   9. Use heroku run to make migrations
+   8. Use heroku run to make migrations
       ```
       heroku run python3 manage.py makemigrations
       ```
       
-   10. Use heroku run to migrate
+   9. Use heroku run to migrate
        ```
        heroku run python3 manage.py migrate
        ```
        
-   11. Use heroku run to load categories
+   10. Use heroku run to load categories
        ```
        heroku run python3 manage.py loaddata categories
        ```
        
-   12. Use heroku run to load products
+   11. Use heroku run to load products
        ```
        heroku run python3 manage.py loaddata products
        ```
@@ -575,6 +560,28 @@ When deploying, you can use any other available name for the heroku app. For exa
       heroku run python3 manage.py createsuperuser
       ```
       
+   9. Update the settings.py file inside my_greengrocer project, adding to the allowed hosts list, 
+      the URL of the application you are deploying.
+   
+      a. Make sure 'mdias-my-greengrocer-new.herokuapp.com' is in the ALLOWED_HOSTS list
+      
+      ```
+      ALLOWED_HOSTS = ['mdias-my-greengrocer-new.herokuapp.com', 'localhost']
+      ```
+      
+      b. Commit your changes
+         ```
+         git add .
+         git commit -m "Update allowed hosts in settings.py file"
+         ```
+         
+   10. Push to heroku git repository
+      ```
+      git push heroku main
+      ```
+      
+6. Congratulations! Your application is deployed to https://mdias-my-greengrocer-new.herokuapp.com/
+
 
 ## Credits
 
