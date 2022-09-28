@@ -26,11 +26,7 @@
 
 ## Overview
 
-The purpose of this project is to develop the <em>My Greengrocer</em> web application, which purpose is to sell fruits and vegetables online. We intend to address the needs of anyone who would like to eat more fruits and vegetables, and find to be more practical, faster and pleasant to buy online.
-
-The objective of this project is to develop the <em>My Greengrocer</em> web application, whose purpose is to sell fruits and vegetables online. 
-
-With <em>My Greengrocer</em>, I intend to address the needs of anyone who would like to eat more fruits and vegetables, and find it to be more practical, faster and pleasant to buy them online.
+The purpose of this project is to develop the <em>My Greengrocer</em> web application, to sell fruits and vegetables online. I intend to address the needs of anyone who would like to eat more fruits and vegetables, and find it to be more practical, faster and pleasant to buy online.
 
 The value this web application provides to the user is that they will be able to buy healthy and fresh fruits and vegetables online, of good quality, instead of having to go themselves to the grocery or to the supermarket.
 
@@ -38,16 +34,28 @@ The online store will start with three categories of products: fresh fruits, fre
 
 The boxes are packed products that can contain anything. There is a product description field that can be used by the seller to describe the contents of each box.
 
-The only option for payment is by credit card. In addition to the product browsing, searching and checkout features, the following is implemented:
+The only option for payment is by credit card. In addition to the product browsing, searching and checkout features, the following features are implemented:
 
 * Product reviews module (all CRUD functionality is implemented)
 * Product requests module (all CRUD functionality is implemented)
 * Contact requests module (all CRUD functionality is implemented)
 * Subscribe to and unsubscribe from newsletter
+* View and update user profile
 
 The main technologies are Python, Django framework, Bootstrap framework, HTML5, CSS and JavaScript.
 
-Before completing the purchase, the user needs to register and login, because the greengrocer needs to collect and keep some essential information, for each user and each order, not only to deliver the product to the user but also to communicate to the greengrocer's sales and billing systems. This website is using django-allauth as the authentication mechanism.
+The following features are only available to registered users:
+
+* Product reviews module
+* Product requests module
+* Contact requests module
+* View and update user profile
+
+Those features for registered users are a valuable part of the website, allowing the users to interact with the application, providing this way some engagement. For these functionalities, I need the users to register and log in so that they can update their data only, instead of letting a user update other people's data.
+
+It is also a very good idea to keep a record of those registered users, so that I can analyze their data. For example I can analyze what they write about the products, what products they request, what they would like to talk about in a future contact. This way I will be able to provide a better experience to those registered users and perhaps to the not registered as well, at least to the ones that may like the same kind of things the registered users like.
+
+The <em>My Greengrocer</em> website uses django-allauth as the authentication mechanism.
 
 ## Features
 
@@ -59,15 +67,17 @@ When browsing a list of products, the users can select a product and add it to t
 
 The contents of the shopping bag are stored in the HTTP session that is established between the HTTP client (browser) and the HTTP server. By storing these contents in the HTTP session and making sure there is always a link to the checkout functionality, the web application allows the user to consolidate their purchase at any point after adding one or more products to the bag.
 
-Registered users can buy products and they can also manage their own product reviews, product requests and contact requests.
+Registered users can see and update their profile and they can manage their own product reviews, product requests and contact requests.
 
-Anyone can browse the products and subscribe to or unsubscribe from the newsletter.
+Anyone can browse the products, buy and subscribe to or unsubscribe from the newsletter.
 
 ### Features left to implement
 
-The only option to pay is by credit card. I am analyzing more options for the customer to pay in the future.
+Currently, the only option to pay is by credit card. I am analyzing more payment options to implement in the future.
 
-I need to limit the delivery area of the products for logistics reasons. This functionality is under analysis and hopefully will be implemented soon, to allow the business to start.
+I will need to limit the delivery area of the products for logistics reasons. This functionality is under analysis and hopefully will be implemented soon, to allow the business to start.
+
+There is a product details page with little content. Listing the product reviews in this page is something I would like to implement.
 
 ## Design
 
@@ -94,7 +104,7 @@ Here is a summary of the project goals:
 
 #### Phase 1
 
-These are the users stories defined for the first phase of the project, mapped to the project goals.
+These are the user stories defined for the first phase of the project, mapped to the project goals.
 
 * USER STORY: Welcome Page - As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account. PROJECT GOALS: Log in, Create account.
 * USER STORY: Create account - As a Site User I want to be able to create an account so that I can log in to the website.  PROJECT GOALS: Log in, Create account.
