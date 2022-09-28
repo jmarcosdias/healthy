@@ -582,7 +582,72 @@ When deploying, you can use any other available name for the heroku app. For exa
       
 6. Congratulations! Your application is deployed to https://mdias-my-greengrocer-new.herokuapp.com/
 
+### How to deploy the site locally
 
+1. Create a GitPod workspace based on the main branch of the 
+   [GitHub repository](https://github.com/jmarcosdias/healthy)
+
+2. Install the required packages based on the requirements.txt file
+
+   ```
+   pip3 install -r requirements.txt
+   ```  
+   
+3. Create a new file, named env.py, on the top level directory
+
+4. Add the following lines to the env.py file, with suitable values instead of <...>.
+
+   ```
+   import os
+   os.environ["SECRET_KEY"] = "<a value you define>"
+   os.environ["STRIPE_PUBLIC_KEY"] = "<from your stripe account>"
+   os.environ["STRIPE_SECRET_KEY"] = "<from your stripe account>"
+   os.environ["STRIPE_WH_SECRET"] = "<from the webhook section in your stripe account>"
+   os.environ["DEVELOPMENT"] = "Yes"
+   ```
+
+5. Add the following import to the settings.py file so that the values above are imported.
+   ```
+   import env
+   ```
+
+6. Apply the migrations to the database
+   ```
+   python3 manage.py migrate
+   ```
+   
+7. Load categories
+   ```
+   python3 manage.py loaddata categories
+   ```
+   
+8. Load products
+   ```
+   python3 manage.py loaddata products
+   ```
+   
+9. Update the settings.py file by adding the current Gitpod URL
+
+   For example you will add the second element with the URL you see in your Gitpod browser window.
+   ```
+   CSRF_TRUSTED_ORIGINS = [
+     'https://8000-jmarcosdias-healthy-15ruaqtykf0.ws-eu67.gitpod.io'
+    ,'https://8000-jmarcosdias-healthy-1hwhz59gggh.ws-eu67.gitpod.io'
+   ]
+   ```
+
+10. Create a superuser for the django admin module
+    ```
+    python3 manage.py createsuperuser
+    ```
+       
+11. Congratulations. The website is deployed locally!
+    
+    To run the server locally:
+    ```
+    python3 manage.py runserver
+    ```
+    
 ## Credits
 
  
