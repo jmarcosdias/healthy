@@ -356,13 +356,13 @@ When deploying, you can use any other available name for the heroku app. For exa
    6. Update the settings.py file inside my_greengrocer project, adding to the allowed hosts list, 
       the URL of the application you are deploying.
    
-      1. Make sure 'mdias-my-greengrocer-new.herokuapp.com' is in the ALLOWED_HOSTS list
+      a. Make sure 'mdias-my-greengrocer-new.herokuapp.com' is in the ALLOWED_HOSTS list
       
       ```
       ALLOWED_HOSTS = ['mdias-my-greengrocer-new.herokuapp.com', 'localhost']
       ```
       
-      2. Commit your changes
+      b. Commit your changes
          ```
          git add .
          git commit -m "Update allowed hosts in settings.py file"
@@ -471,10 +471,10 @@ When deploying, you can use any other available name for the heroku app. For exa
       
       Here are the steps to do what is described above:
       
-      1. Create a group named "manage-my-green-grocer" (or choose another name if you prefer)
-      2. In the "manage-my-green-grocer" group Permissions, choose Add permissions -> Attached policies.
-      3. Click in "Create policy". A new page will open (create policy page) in a new tab.
-      4. In the Create policy page, click in the JSON tab, click in the "Import managed policy" link,
+      a. Create a group named "manage-my-green-grocer" (or choose another name if you prefer)
+      b. In the "manage-my-green-grocer" group Permissions, choose Add permissions -> Attached policies.
+      c. Click in "Create policy". A new page will open (create policy page) in a new tab.
+      d. In the Create policy page, click in the JSON tab, click in the "Import managed policy" link,
          then search "AmazonS3FullAccess", choose this line and then click "Import".
          The JSON text that will be imported, should look like this:
          ```
@@ -516,14 +516,65 @@ When deploying, you can use any other available name for the heroku app. For exa
          your policy. For example: name "my-greengrocer-policy", description "Access to S3 Bucket for My Greengrocer static files".
          Then click "Create Policy" to create it. 
          
-      5. Go back to the IAM page, click in "User Groups" and "manage-my-green-grocer" group, 
+      e. Go back to the IAM page, click in "User Groups" and "manage-my-green-grocer" group, 
          then go to Permissions for this user group, click "Add Permissions" and then "Attach Policies". 
          Select the "my-greengrocer-policy" line and then click "Add Permissions".
          
-      6. In the IAM page, click in "Users" and then "Add users". Give the user the 
+      f. In the IAM page, click in "Users" and then "Add users". Give the user the 
          name "my-green-grocer-static-files-user", select AWS credential type = 
          "Access key - Programmatic access" for this user. Add this user to the "manage-my-green-grocer" group.
          Create the user and download the csv file. Keep the contents of that csv file safe. You will need this.
+         
+4. In Stripe (https://dashboard.stripe.com/)
+
+   1. Create an account for your My Greengrocer business
+
+   2. In the webhooks section, add the following endpoint:
+      https://mdias-my-greengrocer-new.herokuapp.com/checkout/wh/
+      
+
+5. In the GitPod workspace
+       
+   1. Use heroku config to set the AWS_ACCESS_KEY_ID variable
+      ```
+      heroku config:set AWS_ACCESS_KEY_ID = '<get this value from your AWS account>'
+      ```
+      
+   2. Use heroku config to set the AWS_SECRET_ACCESS_KEY variable
+      ```
+      heroku config:set AWS_SECRET_ACCESS_KEY = '<get this value from the csv file you got from IAM AWS when you created the user>'
+      ```
+      
+   3. Use heroku config to set the EMAIL_HOST_PASS variable
+      ```
+      heroku config:set EMAIL_HOST_PASS = '<from your google (or other) account>'
+      ```
+      
+   4. Use heroku config to set the EMAIL_HOST_USER variable
+      ```
+      heroku config:set EMAIL_HOST_USER = '<from your google (or other) account>'
+      ```
+      
+   5. Use heroku config to set the STRIPE_PUBLIC_KEY variable
+      ```
+      heroku config:set STRIPE_PUBLIC_KEY = '<from your stripe account>'
+      ```
+      
+   6. Use heroku config to set the STRIPE_SECRET_KEY variable
+      ```
+      heroku config:set STRIPE_SECRET_KEY = '<from your stripe account>'
+      ```
+      
+   7. Use heroku config to set the STRIPE_WH_SECRET variable
+      ```
+      heroku config:set STRIPE_WH_SECRET = '<from the webhook section in your stripe account>'
+      ```
+      
+   8. Use heroku run to create a superuser for you My Greengrocer website
+      ```
+      heroku run python3 manage.py createsuperuser
+      ```
+      
 
 ## Credits
 
