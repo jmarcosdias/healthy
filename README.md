@@ -505,7 +505,7 @@ Logged as User1 do the following:
 5.  Confirm you can see the message "You are editing a review for ...!" referring to the product you chose.
 6.  Clean the text for your review and click Update Review. You should see a message at form validation saying to fill this field.
 7.  Update the text for your review filling something different from the initial content and click Update Review. You should be redirected to the Reviews page.
-8.  Confirm you can see a message saying "Successfully updated review!" and your review correctly updated.
+8.  Confirm you can see a message saying "Successfully updated review!" and your review is correctly updated.
 9.  In the review you created/updated, click Delete and then click Delete. You should be redirected to the Reviews page.
 10.  Confirm you can see the message "Review deleted!" and that you cannot see the review you just deleted.
 11.  Now try to add a review without anything in the review's text field.
@@ -523,11 +523,11 @@ Logged as User1 do the following:
 4.  In the request you created, click Edit. You should be redirected to the Edit Product Request page.
 5.  Confirm you can see the message "You are editing a product request".
 6.  Clean the text for your request and click Update Product Request. You should see a message at form validation saying to fill this field.
-7.  Update the text for your request filling something different from the initial content and click Update Product Request. You should be redirected to the Requests page.
-8.  Confirm you can see a message saying "Successfully updated product request!" and your request correctly updated.
+7.  Update the text for your request filling something different from the initial content and click Update Product Request. You should be redirected to the Product Requests page.
+8.  Confirm you can see a message saying "Successfully updated product request!" and your request is correctly updated.
 9.  In the request you created/updated, click Delete and then click Delete. You should be redirected to the Product Requests page.
 10.  Confirm you can see the message "Product request deleted!" and that you cannot see the request you just deleted.
-11.  Now try to add a request without anything in the request's text field.
+11.  Now try to add a product request without anything in the request's text field.
 12.  You should see a message at form validation saying to fill this field.
 13.  Click Cancel. You should be redirected to the Product Requests page and you should not see the empty request you tried to add in step 12.
 
@@ -535,6 +535,28 @@ Logged as User1 do the following:
     
 #### Contact requests
 ##### As a Registered User I want to be able to manage my contact requests.
+
+Logged as User1 do the following:
+1.  Click My Contact Requests. You should be redirected to thr My Contact Requests page.
+2.  Click Add Contact Request, fill the form.  Note that all fields are mandatory and contact date must be a future date. Click Add Contact Request. You should be redirected to the Contact Requests page.
+3.  Confirm you can see the request you just added and also a message saying "Successfully added contact request!".
+
+Logged as another user (for example a User2 you might want to create, or a superuser), do the following:
+1. Try to add a contact request with thr same Contact Date and Contact Timeslot of the contact request you created with User1.
+2. You should see a message saying "Failed to add contact request. Please ensure the form is valid!" and then at form validation you should see another message in the timeslot field saying "Sorry but this time slot is already booked. Please try another day or another time slot.".
+3. Try another day or another time slot that is not yet booked and you should be able to save the contact request.
+
+Logged as User1 do the following:
+1.  In the request you created, click Edit. You should be redirected to the Edit Contact Request page.
+2.  Confirm you can see the message "You are editing a contact request".
+3.  Try to Update Contact Request by fillig an invalid value in each field at a time. You should see the corresponding message accordingly to the field you are trying to fill with an invalid value. 
+4.  Fill all the fields with valid values and click Update Contact Request. You should be redirected to the Contact Requests page.
+5.  Confirm you can see a message saying "Successfully updated contact request!" and your request is correctly updated.
+6.  In the request you created/updated, click Delete and then click Delete. You should be redirected to the Contact Requests page.
+7.  Confirm you can see the message "Contact request deleted!" and that you cannot see the request you just deleted.
+8.  Now try to add a contact request with invalid values in some fields. Try different combinations of invalid values. 
+9.  You should not be able to add this request with invalid values and should see the corresponding message at form validation level. You should see one message at a time, so that you can end up fixing all the invalid values and then you should be able to add this request.
+10.  Try again to add a contact request with invalid value and then Click Cancel. You should be redirected to the Contact Requests page and you should not see the invalid request you tried to add in step 10.
 
 #### Newsletter signup form 
 ##### As a Site User I want to be able to subscribe to and unsubscribe from the newsletters.
