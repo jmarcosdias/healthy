@@ -21,7 +21,7 @@ def subscribe(request):
                  our newsletter!')
             return redirect(reverse('home'))
     
-    messages.error(request, 'Sorry, we were unable to fulfill your reqest. \
+    messages.error(request, 'Sorry, we were unable to fulfill your request. \
         Please review your input!')
 
     context = {
