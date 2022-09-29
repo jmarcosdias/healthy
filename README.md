@@ -13,7 +13,7 @@
 4. [Project follow-up](#project-follow-up)
    1. [User stories defined for project's phase 1](#user-stories-defined-for-projects-phase-1)
 5. [Testing](#testing)
-   1. [Manual tests](#manual-tests)
+   1. [Manual test procedures](#manual-test-procedures)
    2. [Validator tests](#validator-tests)
 6. [Web marketing strategies](#web-marketing-strategies)
    1. [Search Engine Optimization](#search-engine-optimization)
@@ -401,6 +401,61 @@ Repeat the following steps in different devices including desktop and smartphone
 4. Click on the link inside the email. You should be redirected to the confirm email address page.
 5. Click Confirm in that page. 
 6. Verify that you can see the message "You have confirmed xxx@yyy." with xxx@yyy being the email you used to register. 
+   
+Note: if User1 is not available, please utilize another user and replace User1 by that user along all the manual testing procedures.
+
+#### Log in
+
+##### As a Site User I want to be able to log in to the website so that I can buy products
+
+1. Go to the landing page
+2. Make sure you are not logged
+3. Login as User1
+4. Verify that you can see the message "Successfully signed in as User1."
+
+#### Recover password
+
+##### As a Registered Site User I want to be able to recover my password in case I forget it, so that I can log in to the website.
+
+1. Go to the landing page
+2. Make sure you are not logged
+3. Click Login and then "Forgot password?" link. 
+4. Write the email you used to create User1 and click Reset My Password. You should receive an email with instructions to reset your password.
+5. Make sure you are able to reset your password by testing the "Log in" again, this time with your new password.
+   
+#### "View list of products" AND "View individual product details" AND "Sort the list of available products"
+
+##### As a Site User I want to be able to:
+      * View a list of products for each product category, so that I can select some products to purchase.
+      * View the title, the subtitle, the category, the description, the price and the image of each product, so that I can understand what I would be buying if I decided to buy this product.
+      * Sort products by title and price so that I can easily identify what I want to purchase.
+
+1. Go to the landing page
+2. Make sure you are not logged
+3. Login as User1
+4. Click each "All Products", "Fresh Fruits", "Fresh Vegetables" and "Boxes" links and for each one make sure you utilize all the options in the corresponding region highlited in the below figure and make sure they do what they say they do.![image](https://user-images.githubusercontent.com/87392921/192921734-7053c879-7038-445d-a94e-314bd9ef34eb.png)
+5. Click to see the detail of a product of each category. 
+   1. For a product with a "Fresh Fruits" or "Fresh Boxes" category, you must see a title, a sub-title and a price.
+   2. For a product with a "Boxes" category you must see a title, a price and a description.
+
+In relation to step 4 above, below in yellow is what you should see and test for each case.
+
+* All Products 
+
+![image](https://user-images.githubusercontent.com/87392921/192923288-f076e29f-e8f0-41fa-9af7-6b515ed19a38.png)
+
+* Fresh Fruits
+
+![image](https://user-images.githubusercontent.com/87392921/192923477-5c76154b-d691-4299-9e1b-d444dbcdc649.png)
+
+* Fresh Vegetables
+
+![image](https://user-images.githubusercontent.com/87392921/192923573-f2106e3d-7c99-47b5-8fe6-26362a3fc84a.png)
+
+* Boxes
+
+![image](https://user-images.githubusercontent.com/87392921/192923718-1c1eb133-4b7c-44fb-b462-90289e50ac3a.png)
+
 
 #### Navigation on the entire site
 
