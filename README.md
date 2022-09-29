@@ -383,6 +383,14 @@ Here I describe the manual test procedures I have designed and implemented to as
 
 Repeat the following steps in different devices including desktop and smartphone and different browsers. Pay attention to the usability and responsiveness by comparing what you see in each device with what you see in other devices. Follow the instructions at each step to assess functionality and data management.
 
+#### Feedback messages to users
+
+##### As a Site User I want to receive ongoing feedback messages in the website, according to the actions I take in the website.
+
+These messages should be tested along all the test procedures. Make sure you see messages giving you feedback according to the actions you take.
+
+For example, when signing in as User1 (Log in test below), make sure you see a message saying "Successfully signed in as User1.".
+
 #### Welcome Page
 
 ##### As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account. 
@@ -456,14 +464,23 @@ In relation to step 4 above, below in yellow is what you should see and test for
 
 ![image](https://user-images.githubusercontent.com/87392921/192923718-1c1eb133-4b7c-44fb-b462-90289e50ac3a.png)
 
-
-#### Navigation on the entire site
-
-#### Broken links
-
-#### Ease of Navigation
-
-### Validator tests
+#### Shopping bag AND Checkout
+##### As a Site User I want to be able to:
+      * Add products to the shopping bag.
+      * Finalize my purchase by paying with a credit card.
+1. Go to the landing page
+2. Make sure you are not logged
+3. Login as User1
+4. List some products of different categories and for each category go to the detail of a product, select a quantity and add it to the shopping bag.
+5. Select again some products that are already in the bag and add them again to the shopping bag with a quantity you select.
+6. Verify you see messages according to your actions. For example: Added "Avocado - 1 avocado" to your bag, Updated "Avocado - 1 avocado" quantity to 7, etc...
+8. When you have products of all categories in your shopping bag, select go to secure checkout (this will bring you to the Shopping Bag page). Repeat this step by using a different link, so that you test all the possible links that will bring you the the Shopping Bag page.
+9. In the Shopping Bag page, test the Update link to update the quantity by increasing and decreasing the quantity of different products.
+10. In the Shopping Bag page, test the Remove link to remove a product from the shopping bag.
+11. In the Shopping Bag page, with some products there, click in Secure Checkout. This will bring you to the Checkout page.
+12. In the Checkout page, fill the form and complete the order. For the credit card you can use 4242424242424242 04/24 242 42424.
+13. Confirm the values and the delivery amount. They must be in accordance with what the website says (free delivery for orders over $30).
+14. Click Complete Order. You must see a message saying "Order successfully processed! ..." with the order number. Confirm this in your email as well.
 
 ## Web marketing strategies
 
