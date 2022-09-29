@@ -484,11 +484,15 @@ In relation to step 4 above, below in yellow is what you should see and test for
 #### Products management
 ##### As a Superuser I want to be able to add, update and delete products.  
 
+Logged as a superuser (for example: admin) do the following:
+1.  Click Product Management. You should be redirected to the Product Management page.
+2.  Verify you are able to add products, update products and delete products.
+
 #### Profile
 ##### As a Registered User I want to be able to see and update my profile.
 
 Logged as User1 do the following:
-1.  Click in My Profile option. You should be redirected to My Profile page.
+1.  Click My Profile option. You should be redirected to My Profile page.
 2.  Update the  information in My Profile page and click Update Information
 3.  Verify that you can see the message "Profile updated successfully"
 4.  Go to another page and then go again to the My Profile page and verify your information is correctly updated.
@@ -795,7 +799,7 @@ When deploying, you can use any other available name for the heroku app. For exa
       
       a. Create a group named "manage-my-green-grocer" (or choose another name if you prefer)
       b. In the "manage-my-green-grocer" group Permissions, choose Add permissions -> Attached policies.
-      c. Click in "Create policy". A new page will open (create policy page) in a new tab.
+      c. Click "Create policy". A new page will open (create policy page) in a new tab.
       d. In the Create policy page, click in the JSON tab, click in the "Import managed policy" link,
          then search "AmazonS3FullAccess", choose this line and then click "Import".
          The JSON text that will be imported, should look like this:
