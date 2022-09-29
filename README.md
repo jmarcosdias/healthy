@@ -14,7 +14,6 @@
    1. [User stories defined for project's phase 1](#user-stories-defined-for-projects-phase-1)
 5. [Testing](#testing)
    1. [Manual test procedures](#manual-test-procedures)
-   2. [Validator tests](#validator-tests)
 6. [Web marketing strategies](#web-marketing-strategies)
    1. [Search Engine Optimization](#search-engine-optimization)
    2. [Web marketing strategies beyond SEO](#web-marketing-strategies-beyond-seo)
@@ -549,17 +548,29 @@ Logged as another user (for example a User2 you might want to create, or a super
 Logged as User1 do the following:
 1.  In the request you created, click Edit. You should be redirected to the Edit Contact Request page.
 2.  Confirm you can see the message "You are editing a contact request".
-3.  Try to Update Contact Request by fillig an invalid value in each field at a time. You should see the corresponding message accordingly to the field you are trying to fill with an invalid value. 
+3.  Try to Update Contact Request by filling an invalid value in each field at a time. You should see the corresponding message according to the field you are trying to fill with an invalid value. 
 4.  Fill all the fields with valid values and click Update Contact Request. You should be redirected to the Contact Requests page.
 5.  Confirm you can see a message saying "Successfully updated contact request!" and your request is correctly updated.
 6.  In the request you created/updated, click Delete and then click Delete. You should be redirected to the Contact Requests page.
 7.  Confirm you can see the message "Contact request deleted!" and that you cannot see the request you just deleted.
 8.  Now try to add a contact request with invalid values in some fields. Try different combinations of invalid values. 
 9.  You should not be able to add this request with invalid values and should see the corresponding message at form validation level. You should see one message at a time, so that you can end up fixing all the invalid values and then you should be able to add this request.
-10.  Try again to add a contact request with invalid value and then Click Cancel. You should be redirected to the Contact Requests page and you should not see the invalid request you tried to add in step 10.
+10.  Try again to add a contact request with at least one invalid value and after the error message saying the value is invalid, Click Cancel. You should be redirected to the Contact Requests page and you should not see the invalid contact request you tried to add.
 
 #### Newsletter signup form 
 ##### As a Site User I want to be able to subscribe to and unsubscribe from the newsletters.
+
+Run the below steps not logged as any user and then you can log as User1 and rerun the same steps. The result should be the same.
+In steps 1, 3 and 5 utilize emails that are not present in the Newsletter Subscriptions model.
+
+1. In the website, go to the footer and fill a valid email in the newsletter subscription field and then click Subscribe. You should see a message saying "Thank you for subscribing to our newsletter!"
+2. Repeat step 1 with the same email used in step 1. You should be redirected to the "Subscribe to our Newsletter" page and see the message "Sorry, we were unable to fulfill your request. Please review your input!" and then at form validation level you should see the message "Newsletter subscription with this Email already exists."
+3. Fill another valid email in the field that is in the "Subscribe to our Newsletter" page and click the Subscribe button near that field. You should be redirected to the landing page and see a message saying "Thank you for subscribing to our newsletter!"
+4. In the website, go to the footer and click "Unsubscribe to our newsletter". You should be redirected to the "Unsubscribe to our Newsletter" page.
+5. In the "Unsubscribe to our newsletter" page, fill the form with an email that is not present in the Newsletter Subscriptions model. You must see the message "Sorry, we are not finding this email. Are you sure you subscribed ... before?" (this message with the email you typed).
+6. In the "Unsubscribe to our newsletter" page, fill the form with the email you used in step 1. You should be redirected to the landing page and see the message "We have unsubscribed ... from our newsletter!" (this message with the email you typed).
+7. In the website, go to the footer and click "Unsubscribe to our newsletter". You should be redirected to the "Unsubscribe to our Newsletter" page.
+8. In the "Unsubscribe to our newsletter" page, fill the form with the email you used in step 3. You should be redirected to the landing page and see the message "We have unsubscribed ... from our newsletter!" (this message with the email you typed).
 
 
 ## Web marketing strategies
