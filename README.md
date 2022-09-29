@@ -375,7 +375,32 @@ The newsletter functionality is complete
 
 ## Testing
 
-### Manual tests
+### Manual test procedures
+
+Here I describe the manual test procedures I have designed and implemented to assess functionality, usability, responsiveness and data management within the <em>My Greengrocer</em> website.
+
+*Testing Instructions*
+
+Repeat the following steps in different devices including desktop and smartphone and different browsers. Pay attention to the usability and responsiveness by comparing what you see in each device with what you see in other devices. Follow the instructions at each step to assess functionality and data management.
+
+#### Welcome Page
+
+##### As a Site User I want to be able to view the welcome/landing page so that I can log in or create an account. 
+
+1. Go to the landing page
+2. Make sure you are not logged in
+3. Verify that both the Login and Register options are available
+
+#### Create account 
+
+##### As a Site User I want to be able to create an account so that I can log in to the website.
+
+1. Go to the landing page
+2. Make sure you are not logged
+3. Utilize the Register option to create the User1 user. You should receive an email to confirm.
+4. Click on the link inside the email. You should be redirected to the confirm email address page.
+5. Click Confirm in that page. 
+6. Verify that you can see the message "You have confirmed xxx@yyy." with xxx@yyy being the email you used to register. 
 
 #### Navigation on the entire site
 
@@ -731,6 +756,8 @@ When deploying, you can use any other available name for the heroku app. For exa
       
 6. Congratulations! Your application is deployed to https://mdias-my-greengrocer-new.herokuapp.com/
 
+Please run the manual tests as described in Testing section.
+
 ### How to deploy the site locally
 
 1. Create a GitPod workspace based on the main branch of the 
@@ -796,6 +823,8 @@ When deploying, you can use any other available name for the heroku app. For exa
     ```
     python3 manage.py runserver
     ```
+    
+Please run the manual tests as described in Testing section.
     
 ## Credits
 
