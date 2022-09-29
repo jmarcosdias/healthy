@@ -991,5 +991,34 @@ Please run the manual tests as described in Testing section.
     
 ## Credits
 
+1. Thanks to Code Institute and to my mentor for all the support I had.
+2. The <em>My Greengrocer</em> project uses the Code Institute's Boutique ADO walkthrough project as a basis and adds the four custom models that are highlighted in the data model section in this document
+3. The static files and media files are stored in [Amazon Web Services (AWS)](https://aws.amazon.com/)
+4. The payment functionality uses the [Stripe](https://stripe.com/) online payment processing system.
+5. Icons used from [Font Awesome](https://fontawesome.com/)
+6. Fonts used from [Google Fonts](https://fonts.google.com/)
+7. Free pictures used from [Pixabay](https://pixabay.com/)
+   * Background
+   https://pixabay.com/photos/greengrocer-produce-fresh-market-780395/
+   * Lemon
+   https://pixabay.com/photos/lemon-fruit-vegetable-2121307/
+   * Apple, Orange, Peppers and Lemons Box
+   https://pixabay.com/photos/fruit-vitamins-orange-healthy-food-320136/
+   * Broccoli
+   https://pixabay.com/photos/appetite-broccoli-brocoli-broccolli-1238251/
+   * Kiwi
+   https://pixabay.com/photos/fruits-and-vegetables-fruit-kiwi-1274079/
+   * Tomato
+   https://pixabay.com/photos/food-fresh-fruit-green-healthy-1239191/
+   * Avocado
+   https://pixabay.com/photos/appetite-avacado-avo-avocado-1238257/
+   * Eggplant
+   https://pixabay.com/photos/eggplant-vegetables-fruit-egg-fruit-1717224/
+   * Garlics and Lemons Box
+   https://pixabay.com/photos/garlic-lemons-fruit-vegetables-276356/
+   * No image
+   https://pixabay.com/vectors/fruit-basket-vegetable-nutrition-40276/
+
+ 
  
     
