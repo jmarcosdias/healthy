@@ -482,6 +482,64 @@ In relation to step 4 above, below in yellow is what you should see and test for
 13. Confirm the values and the delivery amount. They must be in accordance with what the website says (free delivery for orders over $30).
 14. Click Complete Order. You must see a message saying "Order successfully processed! ..." with the order number. Confirm this in your email as well.
 
+#### Products management
+##### As a Superuser I want to be able to add, update and delete products.  
+
+#### Profile
+##### As a Registered User I want to be able to see and update my profile.
+
+Logged as User1 do the following:
+1.  Click in My Profile option. You should be redirected to My Profile page.
+2.  Update the  information in My Profile page and click Update Information
+3.  Verify that you can see the message "Profile updated successfully"
+4.  Go to another page and then go again to the My Profile page and verify your information is correctly updated.
+
+#### Product reviews
+##### As a Registered User I want to be able to manage my product reviews.
+
+Logged as User1 do the following:
+1.  Click My Product Reviews. You should be redirected to My Product Reviews page.
+2.  Click Add Review, fill the form and click Add Review. You should be redirected to the Reviews page.
+3.  Confirm you can see the review you just added and also a message saying "Successfully added review!".
+4.  In the review you created, click Edit. You should be redirected to the Edit Review page.
+5.  Confirm you can see the message "You are editing a review for ...!" referring to the product you chose.
+6.  Clean the text for your review and click Update Review. You should see a message at form validation saying to fill this field.
+7.  Update the text for your review filling something different from the initial content and click Update Review. You should be redirected to the Reviews page.
+8.  Confirm you can see a message saying "Successfully updated review!" and your review correctly updated.
+9.  In the review you created/updated, click Delete and then click Delete. You should be redirected to the Reviews page.
+10.  Confirm you can see the message "Review deleted!" and that you cannot see the review you just deleted.
+11.  Now try to add a review without anything in the review's text field.
+12.  You should see a message at form validation saying to fill this field.
+13.  Click Cancel. You should be redirected to the Reviews page and you should not see the empty review you tried to add in step 12.
+
+
+#### Product requests
+##### As a Registered User I want to be able to manage my product requests.
+
+Logged as User1 do the following:
+1.  Click My Product Requests. You should be redirected to My Product Requests page.
+2.  Click Add Product Request, fill the form and click Add Product Request. You should be redirected to the Product Requests page.
+3.  Confirm you can see the request you just added and also a message saying "Successfully added product request!".
+4.  In the request you created, click Edit. You should be redirected to the Edit Product Request page.
+5.  Confirm you can see the message "You are editing a product request".
+6.  Clean the text for your request and click Update Product Request. You should see a message at form validation saying to fill this field.
+7.  Update the text for your request filling something different from the initial content and click Update Product Request. You should be redirected to the Requests page.
+8.  Confirm you can see a message saying "Successfully updated product request!" and your request correctly updated.
+9.  In the request you created/updated, click Delete and then click Delete. You should be redirected to the Product Requests page.
+10.  Confirm you can see the message "Product request deleted!" and that you cannot see the request you just deleted.
+11.  Now try to add a request without anything in the request's text field.
+12.  You should see a message at form validation saying to fill this field.
+13.  Click Cancel. You should be redirected to the Product Requests page and you should not see the empty request you tried to add in step 12.
+
+
+    
+#### Contact requests
+##### As a Registered User I want to be able to manage my contact requests.
+
+#### Newsletter signup form 
+##### As a Site User I want to be able to subscribe to and unsubscribe from the newsletters.
+
+
 ## Web marketing strategies
 
 ### Search Engine Optimization
